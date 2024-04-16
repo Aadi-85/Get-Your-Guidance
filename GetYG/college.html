@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic Information</title>
+    <style>
+        /* CSS styles remain unchanged */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f2;
+            font-weight: 600;
+        }
+      
+       
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+        #content {
+            display: none;
+        }
+        ul{
+    list-style-type: square;
+}
+
+ul > li{
+    color: rgb(243, 239, 239);
+}
+
+option{
+    color:black;
+    background-color:#d9ae7c96;
+}
+h2{
+    color: black;
+}
+
+
+#content {
+            display: none;
+        }
+        .left-image,
+        .right-image {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px; /* Adjust the width as needed */
+            height: auto;
+        }
+        .left-image {
+            left: 0;
+            width: 300px;
+            height: 300px;
+        }
+        .right-image {
+            right: 0;
+            width: 300px;
+            height: 300px;
+        }
+        #topics , label{
+            color: rgb(175, 105, 19);
+        }
+        nav {
+        display: flex;
+        justify-content: space-between;
+        max-width: 80%;
+        margin: auto;
+        padding: 1.4rem 1rem;
+        background-color: #000000b5;
+        backdrop-filter: blur(10px);
+        border-radius: 3rem;
+        margin-top: 1rem;
+        /* box-shadow: 0px 0px 3px rgb(254 116 62); */
+    }
+
+    .logo {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .logo a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding: 0;
+        background-color: transparent;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+
+    .headli{
+        padding: 0rem 1.1rem;
+        float: left;
+    }
+
+    li a {
+        color: #e96d3f;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: .7px;
+    }
+
+    ul li a {
+        position: relative;
+    }
+
+    ul li a::before {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+    }
+
+    /* Center Animation */
+    ul li a::before {
+        transform: scale(0, 1);
+        transition: transform .3s ease;
+    }
+
+    ul li a:hover::before {
+        transform: scale(1, 1);
+    }
+    li a.active,
+    li a:hover {
+        color: #fff;
+        transition: all .3s ease-in-out
+    }
+
+    #click {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+    nav{
+        border: 1px solid brown;
+      
+    }
+    
+      
+
+    section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .product img {
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .product-info {
+            flex-grow: 1;
+        }
+        .btn {
+            background-color: #febd69;
+            color: #111;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+         margin-top: 5px;
+         margin-left: 20px;
+        }
+        .btn:hover{
+            background-color: #0eae56d1;
+            border: 2px solid #333;
+            transform: scale(1.1);
+            box-shadow: 5px 5px 10px #84c683;
+            transition:  0.3s ease;
+            text-decoration-style: solid;
+          
+        }
+        .college_info{
+float: right;
+        }
+        .center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* Adjust the height as needed */
+    margin: 20px 0 30px; /* Add some space before and after the section */
+}
+body{
+    background-image:url('bg_college.jpg');
+
+}
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Header content remains unchanged -->
+        <nav>
+            <div class="logo">
+                <a href="#">College Recommendation.</a>
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class="bi bi-list"></i>
+                </div>
+            </label>
+            <ul>
+                <li class="headli"><a href="index.html" class="active">Home</a></li>
+                <li class="headli"><a href="services.html">Services</a></li>
+                <li class="headli"><a href="about.html">About</a></li>
+                <li class="headli"><a href="about.html">Contact</a></li>
+                <li class="headli"><a href="signin.html">Sign-In / Sign-Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <label for="topics">Select your desireed Course:</label>
+        <select id="topics" onchange="showContent()">
+            <!-- Select options remain unchanged -->
+            <option value="topic0" disabled selected id="select">Select a Course</option>
+            <option value="topic1">Engineering</option>
+            <option value="topic2">Medical</option>
+            <option value="topic3">BSC</option>
+            <option value="topic4">BCOM</option>
+            <option value="topic5">BBA</option>
+            <option value="topic6">Nursing</option>
+            <option value="topic7">Pharmacy</option>
+            <option value="topic8">BA</option>
+            <option value="topic9">course1</option>
+            <option value="topic10">course2</option>
+            <option value="topic11">course3</option>
+        </select>
+        <div  class="center-flex" id="gov_pri">
+            <input type="radio" id="radio1"  name="radios" onchange="showSections()">
+            <label for="radio1" style="padding-top: 10px ; color: black;">Govt. Colleges</label>
+            <input type="radio" id="radio2" name="radios" onchange="showSections()">
+            <label for="radio2" style="padding-top: 10px ; color: black;">Private Collges</label>
+        </div>
+        <div id="content">
+                      
+            <div id="topic1">
+     <div id="government">
+                <section>
+                    <div class="product">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVOAZyv3f00aKPry79XzQ9K0wW52GWIHED7Be4CsaFHA&s" alt="Product Image">
+                        <div class="product-info">
+                            <h2>IIIT Hyderabad</h2>
+                            <p>IIIT Hyderabad is a leading research-oriented institute specializing in computer science and information technology. Located in Hyderabad, the institute is known for its world-class faculty, cutting-edge research labs, and vibrant student community. IIIT Hyderabad offers a conducive environment for academic and research excellence, with a strong emphasis on innovation, entrepreneurship, and interdisciplinary learning. The institute's industry collaborations and internships provide valuable real-world experience to students, preparing them for successful careers in the rapidly evolving field of technology. IIIT Hyderabad's commitment to excellence and innovation makes it a preferred choice for aspiring technologists and researchers.</p>
+                           <p class="college_info">Location :-Hyederabad,Telangana <br> Campus size:- 66 Acres <br>Admission Through :- Jee Mains </p>
+                        </div>
+                    </div>
+                  <a href="https://www.iiit.ac.in/">  <button class="btn">Proceed</button> </a>
+                   
+                </section>
+                <section>
+                    <div class="product">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCXSGnlbMEQGHChH22je0CPRWiSFQPS7gjO-IYtEamGA&s" alt="Product Image">
+                        <div class="product-info">
+                            <h2>NIT Trichy</h2>
+                            <p>Situated in Trichy, NIT Trichy is renowned for its academic excellence and vibrant campus life. The institute offers a wide range of engineering and technology programs, backed by a faculty of esteemed scholars and researchers. With a focus on holistic development, NIT Trichy provides ample opportunities for students to engage in extracurricular activities, internships, and industry projects. Its state-of-the-art facilities and conducive learning environment ensure that students receive a well-rounded education, preparing them to tackle real-world challenges with confidence. NIT Trichy's strong industry connections and alumni network further enhance its reputation as a premier technical institution in India.</p>
+                            <p class="college_info">State:- Tiruchirappalli,Tamil Nadu <br> Campus size:- 800 Acres <br>Admission Through :- Jee Mains </p>
+                           
+                        </div>
+                    </div>
+                 <a href="https://www.nitt.edu/">   <button class="btn">Proceed</button> </a>
+                   
+                </section>
+                <section>
+                    <div class="product">
+                        <img src="dtu.jpg" alt="Product Image">
+                        <div class="product-info">
+                            <h2>Delhi Technological University (DTU)</h2>
+                            <p>DTU, located in Delhi, is a premier technical university known for its multidisciplinary approach to education. The university offers a wide range of undergraduate, postgraduate, and doctoral programs in engineering, management, and allied disciplines. With a focus on research, innovation, and industry partnerships, DTU prepares students to tackle real-world challenges and make meaningful contributions to society. Its vibrant campus life, state-of-the-art facilities, and supportive faculty foster an environment of creativity, collaboration, and excellence. DTU's strong alumni network and industry connections further enhance its reputation as a leader in technical education and research.</p>
+                            <p class="college_info">Location:- Rohini, New Delhi<br> Campus size:- 163 Acres <br>Admission Through :- Jee Mains</p>
+                        </div>
+                    </div>
+                    <a href="http://www.dtu.ac.in/">   <button class="btn">Proceed</button> </a>
+                   
+                </section>
+                <section>
+                    <div class="product">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTnoehuEwBJBzuKEiy56rznNUqPOjYokIZ_UhQmODfFQ&s" alt="Product Image">
+                        <div class="product-info">
+                            <h2>NetaJi Subhash Chandra Bose University of Technology</h2>
+                            <p>Formerly known as NSIT, NSUT Delhi is esteemed for its engineering and management programs. Situated in the heart of Delhi, the university boasts a rich legacy of academic excellence and industry collaborations. NSUT offers a holistic learning experience, combining theoretical knowledge with practical skills through innovative teaching methods and hands-on training. Its vibrant campus life and supportive faculty create an ideal environment for personal and professional growth. NSUT's strong emphasis on research and entrepreneurship nurtures future leaders and innovators, making it a preferred choice for students aspiring to excel in the fields of engineering and technology.</p>
+                            <p class="college_info">Location:- New Delhi <br> Campus size:- 145 Acres <br>Admission Through :- Jee Mains</p>
+                        </div>
+                    </div>
+                    <a href="http://www.nsit.ac.in">   <button class="btn">Proceed</button> </a>
+                   
+                </section>
+                <section>
+                    <div class="product">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTl6nbsiA6ld6HcppHqSO_Na1BeGs4LEFZ-ichcQ1SWw&s" alt="Product Image">
+                        <div class="product-info">
+                            <h2>Jamia Millia Islamia</h2>
+                            <p> Jamia Millia Islamia, located in Delhi, is a central university known for its diverse academic programs and inclusive environment. The university offers undergraduate, postgraduate, and doctoral courses in various disciplines, including arts, humanities, sciences, and engineering. Jamia Millia Islamia fosters intellectual growth and cultural exchange, with a commitment to promoting social justice, equality, and pluralism through education and research. Its vibrant campus life, world-class facilities, and dedicated faculty members create an enriching learning environment for students from diverse backgrounds. Jamia Millia Islamia's emphasis on holistic development and community engagement prepares students to become responsible global citizens and leaders in their chosen fields.</p>
+                            <p class="college_info">Location:- South East Delhi , Delhi  <br> Campus size:- 254 Acres <br>Admission Through :- Jee Mains</p>
+                        </div>
+                    </div>
+                    <a href="https://jmi.ac.in/">   <button class="btn">Proceed</button> </a>
+                   
+                </section>
+                <section>
+                    <div class="product">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_u78BtMKpVqMAHXiGiqXhQpjpTEGcmzPU4fnwfeC0yQ&s" alt="Product Image">
+                        <div class="product-info">
+                            <h2>VJIT Mumbai</h2>
+                            <p> VJTI is one of the oldest engineering colleges in India, situated in Mumbai. Renowned for its academic excellence and industry-oriented programs, the institute offers a diverse range of undergraduate and postgraduate courses in engineering, technology, and allied disciplines. VJTI provides a conducive environment for innovation and research, with state-of-the-art facilities and experienced faculty members. Its strong industry connections and practical approach to education ensure that students are well-equipped to meet the demands of the ever-changing global market. VJTI's rich legacy, vibrant campus life, and focus on holistic development make it a preferred destination for aspiring engineers and technologists.</p>
+                           <p class="college_info">Location:- Matunga, Mumbai , Maharashtra <br> Campus size:- 16 Acres <br>Admission Through :- Jee Mains</p>
+                        </div>
+                    </div>
+                    <a href="https://vjti.ac.in/">   <button class="btn">Proceed</button> </a>
+                   
+                </section>
+                <section>
+                    <div class="product">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxsMhvtiGwWSoHUhrbNFc7uzA_4Q1fmOz3iKoDXDVGEQ&s" alt="Product Image">
+                        <div class="product-info">
+                            <h2>Anna University</h2>
+                            <p> Located in Chennai, Anna University is a premier technical institution known for its rigorous academics and top-notch faculty. The university offers a diverse range of engineering and technology programs, fostering cutting-edge research and industry collaborations. With a strong emphasis on holistic education, it equips students with both theoretical knowledge and practical skills, preparing them for successful careers in their chosen fields. Anna University's vibrant campus life, world-class facilities, and supportive learning environment attract students from all over the country, making it a hub for academic excellence and innovation in the field of engineering and technology.</p>
+                           <p class="college_info">Location:- Chennai,Tamil Nadu<br> Campus size:- 189 Acres <br>Admission Through :- Jee Mains</p>
+                        </div>
+                    </div>
+                    <a href="https://www.annauniv.edu/">   <button class="btn">Proceed</button> </a>
+                   
+                </section>
+                <section>
+                    <div class="product">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROrJzZbDnVYifeXpS9d-KhrIJySQ0hGEHda7EAFXBNwQ&s" alt="Product Image">
+                        <div class="product-info">
+                            <h2>PEC Chandigarh</h2>
+                            <p>Situated in Chandigarh, PEC is renowned for its strong alumni network, producing leaders in various fields. With a rich history of academic excellence, it emphasizes innovation and entrepreneurship, offering state-of-the-art facilities and a vibrant campus life. The college's engineering programs are highly regarded, attracting top talent from across the country. PEC promotes holistic development through extracurricular activities, internships, and industry collaborations, preparing students for real-world challenges. Its picturesque campus and supportive faculty create an ideal environment for learning and personal growth, making PEC a preferred choice for aspiring engineers.</p>
+                            <p class="college_info">Location:- Sector-12,Chandigarh<br> Campus size:- 149 Acres <br>Admission Through :- Jee Mains</p>
+                        </div>
+                    </div>
+                    <a href="https://pec.ac.in/">   <button class="btn">Proceed</button> </a>
+                   
+                </section>
+            </div>
+            <div id="private">
+                <section>
+                    <div class="product">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZicV1esqW20LlWeu1ipUCGbtyySRhscQZNy2xeFBAJA&s" alt="Product Image">
+                        <div class="product-info">
+                            <h2>BITS</h2>
+                            <p>BITS Pilani is a prestigious institution known for its rigorous academic programs and innovative teaching methods. Located in Rajasthan, it offers undergraduate, postgraduate, and doctoral courses in engineering, sciences, and management. With a focus on research and industry collaborations, BITS Pilani prepares students to excel in their chosen fields and make significant contributions to society. Its vibrant campus life, world-class facilities, and strong alumni network make it a preferred destination for aspiring engineers and technologists.</p>
+                           <p class="college_info">Location:- Pilani,Rajasthan/Goa/Hyderabad <br> Campus size:- 328 Acres <br>Admission Through :- BITSAT </p>
+                        </div>
+                    </div>
+                    <a href="https://www.bits-pilani.ac.in/goa/">   <button class="btn">Proceed</button> </a>
+                   
+                </section>
+                <section>
+                    <div class="product">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1njKRemSQCYfcYV4Z0zqNix_4EdiHDz8mLrJdAHOZYQ&s" alt="Product Image">
+                        <div class="product-info">
+                            <h2>VIT</h2>
+                            <p> VIT Vellore is a premier technical institution known for its academic excellence and industry partnerships. Situated in Tamil Nadu, it offers a wide range of undergraduate, postgraduate, and doctoral programs in engineering, technology, management, and allied disciplines. With a focus on holistic development and experiential learning, VIT Vellore provides students with opportunities to gain practical skills through industry internships, research projects, and collaborative initiatives. Its modern campus, world-class facilities, and diverse student community create a vibrant learning environment conducive to personal and professional growth. VIT Vellore's strong emphasis on innovation, entrepreneurship, and leadership development prepares students to succeed in the global marketplace.
+                            </p>
+                            <p class="college_info">Location:- Vellore , Tamil Nadu   <br> Campus size:- 250 Acres <br>Admission Through :- VITEEE </p>
+                           
+                        </div>
+                    </div>
+                    <a href="https://vit.ac.in/">   <button class="btn">Proceed</button> </a>
+                   
+                </section>
+                <section>
+                    <div class="product">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJbZXhqfMUvvsXgKzJSRu4owte2LGuUe9Lxbc2EIu95A&s" alt="Product Image">
+                        <div class="product-info">
+                            <h2>Thapar University</h2>
+                            <p> Thapar Institute, located in Patiala, is renowned for its academic excellence and industry-oriented programs. The institute offers a wide range of undergraduate, postgraduate, and doctoral courses in engineering, technology, and management. With a strong emphasis on research and innovation, Thapar Institute provides students with opportunities to engage in cutting-edge research projects and industry internships. Its vibrant campus life, state-of-the-art facilities, and experienced faculty members create an ideal environment for holistic development and professional growth. Thapar Institute's strong industry connections and placement record make it a preferred choice for students seeking quality education and rewarding careers.</p>
+                            <p class="college_info">Location:- Patiala,Punjab <br> Campus size:- 250 Acres <br>Admission Through :- Jee Mains/Boards </p>
+                        </div>
+                    </div>
+                    <a href="https://www.thapar.edu/">   <button class="btn">Proceed</button> </a>
+                   
+                </section>
+                <section>
+                    <div class="product">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwx6HiRxXxOLBCdIjXu52GHOS1GxlA__VgI-HsNsIJAQ&s" alt="Product Image">
+                        <div class="product-info">
+                            <h2>Jain University</h2>
+                            <p>Jain University is a renowned educational institution located in Bangalore, India. It offers a diverse range of undergraduate, postgraduate, and doctoral programs across various disciplines including engineering, management, humanities, and sciences. Known for its academic excellence and innovative teaching methodologies, Jain University emphasizes holistic development through industry-relevant curriculum, research opportunities, and extracurricular activities. With state-of-the-art facilities and experienced faculty, the university provides a conducive environment for students to excel in their chosen fields. It fosters a culture of entrepreneurship, leadership, and social responsibility, preparing graduates to become global citizens and contribute positively to society.</p>
+                            <p class="college_info">Location:- Bengalore, Karnataka<br> Campus size:- 350 Acres <br>Admission Through :- Jee Mains/Boards </p>
+                        </div>
+                    </div>
+                    <a href="https://www.jainuniversity.ac.in/">   <button class="btn">Proceed</button> </a>
+                   
+                </section>
+                <section>
+                    <div class="product">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSygmOYz9fMO-M22xDA3jN3dfOJTe68unGI2aK1_3Ocew&s" alt="Product Image">
+                        <div class="product-info">
+                            <h2>UPES</h2>
+                            <p>Jain University is a renowned educational institution located in Bangalore, India. It offers a diverse range of undergraduate, postgraduate, and doctoral programs across various disciplines including engineering, management, humanities, and sciences. Known for its academic excellence and innovative teaching methodologies, Jain University emphasizes holistic development through industry-relevant curriculum, research opportunities, and extracurricular activities. With state-of-the-art facilities and experienced faculty, the university provides a conducive environment for students to excel in their chosen fields. It fosters a culture of entrepreneurship, leadership, and social responsibility, preparing graduates to become global citizens and contribute positively to society.</p>
+                            <p class="college_info">Location:- Prem Nagar, Uttarakhand  <br> Campus size:- 44 Acres <br>Admission Through :- Jee Mains/Boards </p>
+                        </div>
+                    </div>
+                    <a href="https://www.upes.ac.in/">   <button class="btn">Proceed</button> </a>
+                   
+                </section>
+                <section>
+                    <div class="product">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpV0RaNdwffT73QBKbM8hmlWcYIyMFa7z5vk9uc9dxrg&s" alt="Product Image">
+                        <div class="product-info">
+                            <h2>Ramaiah University</h2>
+                            <p>Ramaiah University, located in Bangalore, India, is renowned for its comprehensive academic programs and state-of-the-art facilities. With a focus on innovation and excellence, it offers a diverse range of undergraduate and postgraduate courses across various disciplines including engineering, management, and design. The university prides itself on fostering a vibrant learning environment through industry collaborations, research initiatives, and experiential learning opportunities. Ramaiya University is committed to nurturing students into well-rounded professionals equipped with the skills and knowledge needed to thrive in their respective fields. Its dynamic campus life, supportive faculty, and emphasis on holistic development make it a preferred choice among aspiring scholars.</p>
+                            <p class="college_info">Location:- Bengalore, Karnataka <br> Campus size:- 65 Acres <br>Admission Through :- Jee Mains/Boards </p>
+                        </div>
+                    </div>
+                    <a href="https://www.msruas.ac.in/">   <button class="btn">Proceed</button> </a>
+                   
+                </section>
+                <section>
+                    <div class="product">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF5jOiWS-0Y9iMigTwE3Nu4qfLR4f_xflkqDT0DXVY9A&s" alt="Product Image">
+                        <div class="product-info">
+                            <h2>Chandigarh University</h2>
+                            <p>Chandigarh University, located in Punjab, India, is a leading institution known for its academic excellence and innovative teaching methodologies. It offers a diverse range of undergraduate, postgraduate, and doctoral programs across various disciplines, including engineering, management, law, and humanities. The university boasts state-of-the-art infrastructure, modern amenities, and world-class facilities, fostering a conducive environment for learning and research. With a focus on holistic development, Chandigarh University provides ample opportunities for students to engage in extracurricular activities, internships, and industry collaborations to enhance their skills and employability. Renowned for its commitment to quality education and student-centric approach, Chandigarh University has emerged as a preferred destination for aspiring scholars seeking a transformative educational experience.</p>
+                            <p class="college_info">Location:- Sahibzada Ajit Singh Nagar, Punjab <br> Campus size:- 105.58 Acres <br>Admission Through :- Jee Mains/Boards </p>
+                        </div>
+                    </div>
+                    <a href="https://www.cuchd.in/">   <button class="btn">Proceed</button> </a>
+                   
+                </section>
+                <section>
+                    <div class="product">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq-2ZFw2ei0pOsv_uAMGiw9x1fgdgPMxyMfDItBXpmAw&s" alt="Product Image">
+                        <div class="product-info">
+                            <h2>Lovely Professional University</h2>
+                            <p>Lovely Professional University (LPU) is one of India's largest and most renowned private universities, situated in Punjab. With a sprawling campus and modern infrastructure, LPU offers a wide range of undergraduate, postgraduate, and doctoral programs across various disciplines. Known for its diverse student body, vibrant campus life, and extensive facilities, LPU focuses on holistic education, emphasizing experiential learning and industry exposure. The university boasts state-of-the-art laboratories, world-class faculty, and collaborations with leading international institutions, fostering a dynamic learning environment. LPU is committed to grooming students for success in their chosen fields, equipping them with the skills and knowledge needed to excel in a globalized world.</p>
+                            <p class="college_info">Location:- Jalandhar,Punjab<br> Campus size:- 600 Acres <br>Admission Through :- Jee Mains/Boards </p>
+                        </div>
+                    </div>
+                    <a href="https://www.lpu.in/">   <button class="btn">Proceed</button> </a>
+                   
+                </section>
+            </div>
+            </div>
+            <div id="topic2">
+                <div id="government1">
+                    <section>
+                        <div class="product">
+                            <img src="https://static.theprint.in/wp-content/uploads/2020/07/AIIMS-2.jpg" alt="Product Image">
+                            <div class="product-info">
+                                <h2>AIIMS </h2>
+                                <p>AIIMS (All India Institute of Medical Sciences) is a prestigious medical institution in India renowned for excellence in healthcare, education, and research. Established in 1956, AIIMS has multiple campuses across the country and offers undergraduate and postgraduate medical courses. It is known for its state-of-the-art facilities, cutting-edge medical research, and top-notch faculty. AIIMS hospitals provide high-quality medical care to patients from all over India and beyond, making significant contributions to the advancement of medical science and patient care. AIIMS also plays a pivotal role in training the next generation of healthcare professionals.</p>
+                               <p class="college_info">Location:- Delhi <br> Campus size:- 213 Acres <br>Admission Through :-NEET </p>
+                            </div>
+                        </div>
+                      <a href="https://www.aiims.edu/index.php?lang=en">  <button class="btn">Proceed</button> </a>
+                       
+                    </section>
+                    <section>
+                        <div class="product">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzfksidDqmSI92KD2xRaptZHbomOV5jbQ1jTTo1O720g&s" alt="Product Image">
+                            <div class="product-info">
+                                <h2>PGIMER</h2>
+                                <p>The Postgraduate Institute of Medical Education and Research (PGIMER) is a premier medical and research institution located in Chandigarh, India. Established in 1962, it offers undergraduate, postgraduate, and doctoral programs in various medical specialties. PGIMER is renowned for its high-quality patient care, cutting-edge research facilities, and academic excellence. It serves as a referral center for patients from all over India and neighboring countries. With its state-of-the-art infrastructure and dedicated faculty, PGIMER continues to be a leader in medical education and healthcare delivery.</p>
+                                <p class="college_info">Location:- Chandigarh <br> Campus size:- 277 Acres <br>Admission Through :-NEET </p>
+                               
+                            </div>
+                        </div>
+                        <a href="https://pgimer.edu.in/">  <button class="btn">Proceed</button> </a>
+                       
+                    </section>
+                    <section>
+                        <div class="product">
+                            <img src="https://images.deccanherald.com/deccanherald%2Fimport%2Fsites%2Fdh%2Ffiles%2Farticleimages%2F2020%2F06%2F26%2Fnimhans-1593114673.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop" alt="Product Image">
+                            <div class="product-info">
+                                <h2>NIMHANS</h2>
+                                <p>The National Institute of Mental Health and Neurosciences (NIMHANS) is a premier medical institution in India specializing in mental health and neurosciences research, education, and patient care. Established in 1925 in Bangalore, Karnataka, it has evolved into a center of excellence for psychiatric treatment and neurosciences studies. NIMHANS offers a wide range of clinical services, including psychiatric consultations, therapy, and rehabilitation programs. It is renowned for its innovative research in the field of mental health, contributing significantly to advancements in understanding and treating psychiatric disorders. Additionally, NIMHANS plays a pivotal role in training mental health professionals, fostering a skilled workforce to address the growing mental health challenges in India and beyond.</p>
+                                <p class="college_info">Location:- Banglore,Karnataka <br> Campus size:- 174 Acres <br>Admission Through :- NEET </p>
+                            </div>
+                        </div>
+                        <a href="https://nimhans.ac.in/">  <button class="btn">Proceed</button> </a>
+                       
+                    </section>
+                    <section>
+                        <div class="product">
+                            <img src="https://qph.cf2.quoracdn.net/main-qimg-671f16ff913ba31ba8bfce5a4459d804-lq" alt="Product Image">
+                            <div class="product-info">
+                                <h2>IPGMER</h2>
+                                <p>IPGMER (Institute of Postgraduate Medical Education & Research) is a premier medical institution located in Kolkata, India. It offers undergraduate, postgraduate, and doctoral programs in various medical fields. Established in 1957, IPGMER is affiliated with the West Bengal University of Health Sciences. It provides state-of-the-art medical facilities and conducts research in diverse areas of healthcare. IPGMER is renowned for its excellence in medical education and patient care, serving as a cornerstone in the healthcare landscape of Eastern India.</p>
+                                <p class="college_info">Location:- Kolkata,West Bengal <br> Campus size:- 34 Acres <br>Admission Through :- NEET</p>
+                            </div>
+                        </div>
+                        <a href="https://www.ipgmer.gov.in/">  <button class="btn">Proceed</button> </a>
+                       
+                    </section>
+                    <section>
+                        <div class="product">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKlaTMTqqghmsCqDlqnjP-zAJzg1RMfAH2BAcD6rocQw&s" alt="Product Image">
+                            <div class="product-info">
+                                <h2>JIPMER</h2>
+                                <p>Jawaharlal Institute of Postgraduate Medical Education and Research (JIPMER) is a prestigious medical institution located in Puducherry, India. It is renowned for its high-quality medical education, research, and patient care services. JIPMER offers undergraduate and postgraduate medical courses along with super-specialty programs. It boasts state-of-the-art facilities and a diverse faculty committed to excellence in healthcare. As one of the top medical colleges in India, JIPMER plays a significant role in shaping the future of healthcare professionals and advancing medical knowledge.</p>
+                                <p class="college_info">Loaction:- Puducherry  <br> Campus size:- 192 Acres <br>Admission Through :- NEET </p>
+                            </div>
+                        </div>
+                        <a href="https://jipmer.edu.in/">  <button class="btn">Proceed</button> </a>
+                       
+                    </section>
+                    <section>
+                        <div class="product">
+                            <img src="https://static.theprint.in/wp-content/uploads/2019/04/BHU-1024x576.jpg" alt="Product Image">
+                            <div class="product-info">
+                                <h2>BHU</h2>
+                                <p>Banaras Hindu University (BHU) is a renowned public central university located in Varanasi, Uttar Pradesh, India. Established in 1916 by Pandit Madan Mohan Malaviya, it is one of the largest residential universities in Asia. BHU offers a wide range of undergraduate, postgraduate, and doctoral programs across various disciplines including arts, sciences, engineering, medicine, and agriculture. The university is known for its sprawling campus, rich cultural heritage, and contributions to research and education. BHU holds a prominent place in Indian academia and attracts students from across the country and around the world.</p>
+                           <p class="college_info">Location:- Varanasi, Uttar Pradesh <br> Campus size:- 1300 Acres <br>Admission Through :- NEET </p>
+                            </div>
+                        </div>
+                        <a href="https://www.bhu.ac.in/site/UnitHomeTemplate/1_4_1101_Institute-of-Medical-Sciences-Home">  <button class="btn">Proceed</button> </a>
+                       
+                    </section>
+                    <section>
+                        <div class="product">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYCoYNfn6VlSj-jQJKGDiWZnIh9IZ-4xeEZo71Sxr5ZQ&s" alt="Product Image">
+                            <div class="product-info">
+                                <h2>MMC Chennai</h2>
+                                <p>The Madras Medical College (MMC) in Chennai is one of the oldest and most prestigious medical institutions in India, established in 1835. It is affiliated with the Tamil Nadu Dr. M.G.R. Medical University and offers undergraduate and postgraduate medical courses. MMC Chennai boasts state-of-the-art facilities and renowned faculty members, contributing significantly to healthcare education and research. The college hospital, Government General Hospital, is a major healthcare center in South India, providing quality medical services to millions. MMC Chennai holds a distinguished reputation for producing highly skilled healthcare professionals who serve both locally and globally.</p>
+                                <p class="college_info">Location:- Chennai <br> Campus size:- 265 Acres <br>Admission Through :- NEET </p>
+                            </div>
+                        </div>
+                        <a href="https://www.tnmgrmu.ac.in/index.php/affiliated-colleges-institutions/mbbs-college-location/madras-medical-college-and-hospital.html">  <button class="btn">Proceed</button> </a>
+                       
+                    </section>
+                    <section>
+                        <div class="product">
+                            <img src="https://www.hindustantimes.com/ht-img/img/2023/09/10/1600x900/Balrampur-district-is-150-km-away-from-the-state-c_1694353547336.jpg" alt="Product Image">
+                            <div class="product-info">
+                                <h2>KGMU</h2>
+                                <p>King George's Medical University (KGMU) is a renowned medical institution located in Lucknow, India. Established in 1911, it offers undergraduate, postgraduate, and doctoral programs in medicine and allied sciences. KGMU is known for its exceptional healthcare services, cutting-edge research, and contributions to medical education. The university boasts state-of-the-art facilities and a highly skilled faculty, attracting students and patients from across the country. With a rich history and commitment to excellence, KGMU remains a leading medical institution in India.</p>
+                           <p class="college_info">Location:-Lucknow, Uttar Pradesh<br> Campus size:- 24 Acres <br>Admission Through :- NEET </p>
+                            </div>
+                        </div>
+                        <a href="https://www.kgmu.org/">  <button class="btn">Proceed</button> </a>
+                       
+                    </section>
+                </div>
+                <div id="private1">
+                    <section>
+                        <div class="product">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDARNfzJ9r0KfEUzgIvdZUECpl5HQmQFRWgiJQ0rJ6Yg&s" alt="Product Image">
+                            <div class="product-info">
+                                <h2>Christian Medical College (CMC)</h2>
+                                <p> Christian Medical College (CMC) is a renowned medical institution located in Vellore, India. Established in 1900, it is known for its excellence in medical education, research, and healthcare delivery. CMC offers a wide range of undergraduate, postgraduate, and doctoral programs in medicine and allied health sciences. It is affiliated with the Tamil Nadu Dr. M.G.R. Medical University and is recognized for its Christian ethos and commitment to compassionate care. CMC Vellore has consistently ranked among the top medical colleges in India and is globally acclaimed for its contributions to healthcare.</p>
+                                <p class="college_info">Location:-Vellore, Tamil Nadu<br> Campus size:- 200 Acres <br>Admission Through :- NEET</p>
+                            </div>
+                        </div>
+                        <a href="https://www.cmch-vellore.edu/">  <button class="btn">Proceed</button> </a>
+                       
+                    </section>
+                    <section>
+                        <div class="product">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7EBRMnzFSilRIJdDE5BiM3yYblzV_sOu7VOUMWy7J7w&s" alt="Product Image">
+                            <div class="product-info">
+                                <h2>Kasturba Medical College (KMC)</h2>
+                                <p>Kasturba Medical College (KMC) is a prestigious medical institution located in Manipal, India. It was established in 1953 as the first private medical college in India. KMC is recognized for its high-quality medical education, state-of-the-art facilities, and renowned faculty. It offers undergraduate and postgraduate medical programs, as well as research opportunities in various medical fields. KMC has a strong emphasis on clinical training and is affiliated with Manipal Academy of Higher Education (MAHE), a leading educational institution in India.</p>
+                                <p class="college_info">Location:- Manipal, Karnataka<br> Campus size:- 600  Acres <br>Admission Through :- NEET </p>
+                            </div>
+                        </div>
+                        <a href="https://kasturbagandhicollege.ac.in/">  <button class="btn">Proceed</button> </a>
+                       
+                    </section>
+                    <section>
+                        <div class="product">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS1FsemChODIZno7cSbS6wdLhbnOG35nZzeH78vyjX&s" alt="Product Image">
+                            <div class="product-info">
+                                <h2>St. John's Medical College</h2>
+                                <p>St. John's Medical College, located in Bangalore, India, is a premier medical institution affiliated with Rajiv Gandhi University of Health Sciences. Founded in 1963 by the Catholic Bishops' Conference of India, it has consistently ranked among the top medical colleges in the country. Known for its commitment to excellence in medical education, research, and patient care, St. John's Medical College offers undergraduate and postgraduate medical programs along with various specialty courses. With state-of-the-art facilities and renowned faculty, it continues to produce skilled healthcare professionals dedicated to serving society.</p>
+                                <p class="college_info">Location:- Bangalore, Karnataka<br> Campus size:- 143  Acres <br>Admission Through :-NEET </p>
+                            </div>
+                        </div>
+                        <a href="https://www.stjohns.in/">  <button class="btn">Proceed</button> </a>
+                       
+                    </section>
+                    <section>
+                        <div class="product">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6cytfilVSsFB-7LpzvU9WyWqH8D-hJd0AJIU2ZBFF5A&s" alt="Product Image">
+                            <div class="product-info">
+                                <h2>Amrita Institute of Medical Sciences and Research Centre</h2>
+                                <p>Amrita Institute of Medical Sciences and Research Centre, located in Kochi, India, is a premier medical institution renowned for its excellence in healthcare, education, and research. With state-of-the-art facilities and cutting-edge technology, it offers comprehensive medical services across various specialties, including cardiology, oncology, neurosurgery, and more. The institute is affiliated with Amrita Vishwa Vidyapeetham, a deemed-to-be university recognized for its holistic approach to education and healthcare. Amrita Institute of Medical Sciences is committed to providing compassionate patient care, innovative medical education, and impactful research, making it a hub of medical excellence in the region. Through its dedication to advancing medical knowledge and fostering a culture of compassion, the institute continues to be a leading destination for patients, students, and researchers alike.</p>
+                                <p class="college_info">Location:- Kochi, Kerela<br> Campus size:- 125 Acres <br>Admission Through :- NEET</p>
+                            </div>
+                        </div>
+                        <a href="https://www.amritahospitals.org/">  <button class="btn">Proceed</button> </a>
+                       
+                    </section>
+                    <section>
+                        <div class="product">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShGnnSB3lUdtUy6006vvbQnlZEYAIBYs9Bf8O6TF1Ezw&s" alt="Product Image">
+                            <div class="product-info">
+                                <h2>Sri Ramachandra Medical College and Research Institute</h2>
+                                <p>Sri Ramachandra Medical College and Research Institute, located in Chennai, India, is a premier medical institution renowned for its excellence in education, research, and healthcare. It offers undergraduate, postgraduate, and doctoral programs in various medical and healthcare disciplines. With state-of-the-art infrastructure and experienced faculty, it provides a conducive learning environment for students. The institute is affiliated with Sri Ramachandra Institute of Higher Education and Research (Deemed to be University) and is recognized by the Medical Council of India (MCI). It consistently ranks among the top medical colleges in India, attracting students from across the country and beyond.</p>
+                                <p class="college_info">Location:-Chennai, Tamil Nadu<br> Campus size:- 175 Acres <br>Admission Through :- NEET</p>
+                            </div>
+                        </div>
+                        <a href="https://sanakamedicalcollege.in/">  <button class="btn">Proceed</button> </a>
+                       
+                    </section>
+                    <section>
+                        <div class="product">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYrQcfGT1kRRMLPuZIruhzwKcykLcZbfp1NBbI3EUHmA&s" alt="Product Image">
+                            <div class="product-info">
+                                <h2>Maharishi Markandeshwar Institute of Medical Sciences & Research</h2>
+                                <p>Maharishi Markandeshwar Institute of Medical Sciences & Research (MMIMSR) is a prestigious medical institution located in Ambala, Haryana, India. It offers undergraduate and postgraduate programs in various medical disciplines. Known for its state-of-the-art infrastructure and experienced faculty, MMIMSR emphasizes hands-on clinical training and research opportunities for students. The institute is affiliated with Maharishi Markandeshwar University, recognized for its commitment to excellence in medical education and healthcare. MMIMSR strives to produce competent healthcare professionals equipped with the skills and knowledge to serve society effectively.</p>
+                                <p class="college_info">Location:-<br> Campus size:-  Acres <br>Admission Through :- </p>
+                            </div>
+                        </div>
+                        <a href="https://mmimsr.mmumullana.org/">  <button class="btn">Proceed</button> </a>
+                       
+                    </section>
+                    <section>
+                        <div class="product">
+                            <img src="https://www.edufever.com/wp-content/uploads/2021/12/PSG-Medical-College-jpg.webp" alt="Product Image">
+                            <div class="product-info">
+                                <h2>PSG Institute of Medical Sciences & Research</h2>
+                                <p>PSG Institute of Medical Sciences & Research, located in Coimbatore, India, is a prestigious medical institution known for its excellence in medical education and research. It offers undergraduate and postgraduate programs in various medical disciplines, including medicine, surgery, and allied health sciences. With state-of-the-art facilities and experienced faculty, PSGIMS&R is committed to providing high-quality healthcare education and training. The institute emphasizes practical learning through clinical exposure and research opportunities, fostering the development of competent and compassionate healthcare professionals. PSGIMS&R plays a vital role in advancing healthcare delivery and promoting community health through its innovative programs and patient-centric approach.</p>
+                                <p class="college_info">Location:- Coimbatore, Tamil Nadu<br> Campus size:- 103 Acres <br>Admission Through :- NEET </p>
+                            </div>
+                        </div>
+                        <a href="https://psgimsr.ac.in/">  <button class="btn">Proceed</button> </a>
+                       
+                    </section>
+                    <section>
+                        <div class="product">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKHyUJOvEJwbfdCSwHvciIZdZQ8MU4CX8xWbFWau4dkw&s" alt="Product Image">
+                            <div class="product-info">
+                                <h2>SRM Medical College Hospital and Research Centre</h2>
+                                <p>SRM Medical College Hospital and Research Centre is a prominent healthcare institution located in Chennai, India. It is affiliated with SRM Institute of Science and Technology. Known for its state-of-the-art facilities, it offers comprehensive medical education, patient care, and cutting-edge research. The hospital provides a wide range of medical services across various specialties, catering to the healthcare needs of the community. With a dedicated team of healthcare professionals, it strives to deliver high-quality healthcare services and contribute to medical advancements.</p>
+                                <p class="college_info">Location:-Chennai, Tamil Nadu<br> Campus size:- 250 Acres <br>Admission Through :- NEET </p>
+                            </div>
+                        </div>
+                        <a href="https://medical.srmist.edu.in/">  <button class="btn">Proceed</button> </a>
+                       
+                    </section>
+                </div>
+            </div>
+            <div id="topic3">
+                <div id="government2">
+                    <section>
+                        <div class="product">
+                            <img src="https://cdn.uconnectlabs.com/wp-content/uploads/sites/79/2021/04/career-exploration.png" alt="Product Image">
+                            <div class="product-info">
+                                <h2>College Bcs government 1</h2>
+                                <p>Description of the college goes here Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est explicabo odio voluptatem, alias nam perferendis dolorem non, quas unde minus placeat eligendi tempora harum aliquam rem quia totam, asperiores accusamus corrupti id ipsa? Perspiciatis quos culpa, rem architecto veniam consectetur ipsa accusantium, maxime libero, dolorem aut ut nemo. Assumenda, ullam..</p>
+                               <p class="college_info">State:- XYZ state <br> Campus size:- 1Acres <br>Admission Through :- Jee Mains/Boards <br>Course Fees:- 123Rs</p>
+                            </div>
+                        </div>
+                      <a href="careers.html">  <button class="btn">Proceed</button> </a>
+                       
+                    </section>
+                    <section>
+                        <div class="product">
+                            <img src="https://www.besonline.in/blog/wp-content/uploads/2018/11/Tips-for-Exams.jpg" alt="Product Image">
+                            <div class="product-info">
+                                <h2>College 2</h2>
+                                <p>Description of the service goes here.</p>
+                               
+                            </div>
+                        </div>
+                     <a href="exam.html">   <button class="btn">Proceed</button> </a>
+                       
+                    </section>
+                    <section>
+                        <div class="product">
+                            <img src="https://via.placeholder.com/150" alt="Product Image">
+                            <div class="product-info">
+                                <h2>College 3</h2>
+                                <p>Description of the service goes here.</p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <button class="btn">Proceed</button>
+                       
+                    </section>
+                    <section>
+                        <div class="product">
+                            <img src="https://via.placeholder.com/150" alt="Product Image">
+                            <div class="product-info">
+                                <h2>College 4</h2>
+                                <p>Description of the service goes here.</p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <button class="btn">Proceed</button>
+                       
+                    </section>
+                    <section>
+                        <div class="product">
+                            <img src="https://via.placeholder.com/150" alt="Product Image">
+                            <div class="product-info">
+                                <h2>College 5</h2>
+                                <p>Description of the service goes here.</p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <button class="btn">Proceed</button>
+                       
+                    </section>
+                    <section>
+                        <div class="product">
+                            <img src="https://via.placeholder.com/150" alt="Product Image">
+                            <div class="product-info">
+                                <h2>College 6</h2>
+                                <p>Description of the service goes here.</p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <button class="btn">Proceed</button>
+                       
+                    </section>
+                    <section>
+                        <div class="product">
+                            <img src="https://via.placeholder.com/150" alt="Product Image">
+                            <div class="product-info">
+                                <h2>College 7</h2>
+                                <p>Description of the service goes here.</p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <button class="btn">Proceed</button>
+                       
+                    </section>
+                    <section>
+                        <div class="product">
+                            <img src="https://via.placeholder.com/150" alt="Product Image">
+                            <div class="product-info">
+                                <h2>College 8</h2>
+                                <p>Description of the service goes here.</p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <button class="btn">Proceed</button>
+                       
+                    </section>
+                </div>
+                
+        </div>
+        </div>
+       
+       
+    </main>
+
+    <script>
+        function showContent() {
+            var selectedTopic = document.getElementById("topics").value;
+            var topics = ["topic1", "topic2", "topic3"];
+
+            for (var i = 0; i < topics.length; i++) {
+                var topicDiv = document.getElementById(topics[i]);
+                if (topics[i] === selectedTopic) {
+                    topicDiv.style.display = "block";
+                } else {
+                    topicDiv.style.display = "none";
+                }
+            }
+
+            document.getElementById("content").style.display = "block";
+        }
+
+        function showSections() {
+            var radio1 = document.getElementById("radio1");
+            var radio2 = document.getElementById("radio2");
+
+            var firstTwoSections = ["government", "government1", "government2"];
+            var lastTwoSections = ["private", "private1", "government2"];
+
+            if (radio1.checked) {
+                showHideSections(firstTwoSections, "block");
+                showHideSections(lastTwoSections, "none");
+            } else if (radio2.checked) {
+                showHideSections(firstTwoSections, "none");
+                showHideSections(lastTwoSections, "block");
+            }
+        }
+
+        function showHideSections(sections, display) {
+            for (var i = 0; i < sections.length; i++) {
+                var sectionDiv = document.getElementById(sections[i]);
+                sectionDiv.style.display = display;
+            }
+        }
+    </script>
+
+</body>
+</html>
