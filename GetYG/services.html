@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>services page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f2;
+        }
+
+      
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .product img {
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .product-info {
+            flex-grow: 1;
+        }
+
+        .btn {
+            background-color: #febd69;
+            color: #111;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+         margin-top: 5px;
+         margin-left: 20px;
+        }
+        .btn:hover{
+            background-color: #0eae56d1;
+            border: 2px solid #333;
+            transform: scale(1.1);
+            box-shadow: 5px 5px 10px #84c683;
+            transition:  0.3s ease;
+            text-decoration-style: solid;
+          
+        }
+        nav {
+        display: flex;
+        justify-content: space-between;
+        max-width: 80%;
+        margin: auto;
+        padding: 1.4rem 1rem;
+        background-color: #000000b5;
+        backdrop-filter: blur(10px);
+        border-radius: 3rem;
+        margin-top: 1rem;
+        /* box-shadow: 0px 0px 3px rgb(254 116 62); */
+    }
+
+    .logo {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .logo a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding: 0;
+        background-color: transparent;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+
+    li {
+        padding: 0rem 1.1rem;
+        float: left;
+    }
+
+    li a {
+        color: #e96d3f;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: .7px;
+    }
+
+    ul li a {
+        position: relative;
+    }
+
+    ul li a::before {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+    }
+
+    /* Center Animation */
+    ul li a::before {
+        transform: scale(0, 1);
+        transition: transform .3s ease;
+    }
+
+    ul li a:hover::before {
+        transform: scale(1, 1);
+    }
+    li a.active,
+    li a:hover {
+        color: #fff;
+        transition: all .3s ease-in-out
+    }
+
+    #click {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+    nav{
+        border: 2px solid rgba(255, 166, 0, 0.829);
+    }
+    #twitter{
+    border-radius:60%;
+}
+img{
+    height: 50px;
+}
+    footer p {
+        margin-bottom: 1em;
+    }
+ 
+    .social-icons {
+        display: flex;
+        gap: 1em;
+    }
+
+    .social-icons a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.5em;
+    }
+    footer {
+        text-align: center;
+        padding: 10px 0;
+        background-color: #333;
+        color: #fff;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top: 5px solid yellow;
+      
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">Get Your Guidance.</a>
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class="bi bi-list"></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">Contact</a></li>
+                <li><a href="signin.html">Sign-In / Sign-Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="product">
+            <img src="https://cdn.uconnectlabs.com/wp-content/uploads/sites/79/2021/04/career-exploration.png" alt="Product Image">
+            <div class="product-info">
+                <h2>Explore Careers</h2>
+                <p>This page will help you select all the right careers available according to the coursein which you graduated in.</p>
+               
+            </div>
+        </div>
+      <a href="careers.html">  <button class="btn">Proceed</button> </a>
+       
+    </section>
+    <section>
+        <div class="product">
+            <img src="https://www.besonline.in/blog/wp-content/uploads/2018/11/Tips-for-Exams.jpg" alt="Product Image">
+            <div class="product-info">
+                <h2>Exam Information</h2>
+                <p>This page will provide all the information about all the major exams.</p>
+               
+            </div>
+        </div>
+     <a href="exam.html">   <button class="btn">Proceed</button> </a>
+       
+    </section>
+    <section>
+        <div class="product">
+            <img src="bg_college.jpg" alt="Product Image">
+            <div class="product-info">
+                <h2>College Recommendation</h2>
+                <p>This page will provide all the suitable colleges according to your preferred course.</p>
+                <p></p>
+            </div>
+        </div>
+        <a href="college.html"> <button class="btn">Proceed</button> </a>
+       
+    </section>
+    <section>
+        <div class="product">
+            <img src="course_icon.jpg" alt="Product Image">
+            <div class="product-info">
+                <h2>Course Options</h2>
+                <p>Depending upon your stream in Class 12th this page will show you all the available courses for you.</p>
+                <p></p>
+            </div>
+        </div>
+       <a href="course.html"> <button class="btn">Proceed</button> </a>
+       
+    </section>
+    <footer>
+        <p>Connect with us:</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/aaditya-kumar-6a7656282/" class="headb" target="_blank"> <img src="https://static-00.iconduck.com/assets.00/linkedin-icon-1024x1024-net2o24e.png"> </a>
+            <a href="https://x.com/AbhayKoundal9?t=4SM7Ythsj4EcBCtlyLRQQQ&s=09"  class="headb" target="_blank"><img id="twitter" src="https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.1448711260.1707091200&semt=ais"></a>
+            <a href="https://www.instagram.com/aman_razput07" class="headb"  target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"></a>
+        </div>
+        <p>&copy; 2024 Get Your Guidance. All rights reserved.</p>
+    </footer>
+</body>
+</html>
