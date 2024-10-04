@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Careers</title>
+    <style>
+        /* CSS styles remain unchanged */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f2;
+            font-weight: 600;
+        }
+      
+       
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+        #content {
+            display: none;
+        }
+        ul{
+    list-style-type: square;
+}
+
+ul > li{
+    color: rgb(243, 239, 239);
+}
+
+option{
+    color:black;
+    background-color:#d9ae7c96;
+}
+h2{
+    color: black;
+}
+
+
+#content {
+            display: none;
+        }
+        .left-image,
+        .right-image {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px; /* Adjust the width as needed */
+            height: auto;
+        }
+        .left-image {
+            left: 0;
+            width: 300px;
+            height: 300px;
+        }
+        .right-image {
+            right: 0;
+            width: 300px;
+            height: 300px;
+        }
+        #topics , label{
+            color: rgb(175, 105, 19);
+        }
+        nav {
+        display: flex;
+        justify-content: space-between;
+        max-width: 80%;
+        margin: auto;
+        padding: 1.4rem 1rem;
+        background-color: #000000b5;
+        backdrop-filter: blur(10px);
+        border-radius: 3rem;
+        margin-top: 1rem;
+        /* box-shadow: 0px 0px 3px rgb(254 116 62); */
+    }
+
+    .logo {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .logo a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding: 0;
+        background-color: transparent;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+
+    .headli{
+        padding: 0rem 1.1rem;
+        float: left;
+    }
+
+    li a {
+        color: #e96d3f;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: .7px;
+    }
+
+    ul li a {
+        position: relative;
+    }
+
+    ul li a::before {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+    }
+
+    /* Center Animation */
+    ul li a::before {
+        transform: scale(0, 1);
+        transition: transform .3s ease;
+    }
+
+    ul li a:hover::before {
+        transform: scale(1, 1);
+    }
+    li a.active,
+    li a:hover {
+        color: #fff;
+        transition: all .3s ease-in-out
+    }
+
+    #click {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+    nav{
+        border: 1px solid brown;
+      
+    }
+    
+      
+
+    section {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .product img {
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .product-info {
+            flex-grow: 1;
+        }
+        .btn {
+            background-color: #febd69;
+            color: #111;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+         margin-top: 5px;
+         margin-left: 20px;
+        }
+        .btn:hover{
+            background-color: #0eae56d1;
+            border: 2px solid #333;
+            transform: scale(1.1);
+            box-shadow: 5px 5px 10px #84c683;
+            transition:  0.3s ease;
+            text-decoration-style: solid;
+          
+        }
+        .college_info{
+float: right;
+        }
+        .center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* Adjust the height as needed */
+    margin: 20px 0 30px; /* Add some space before and after the section */
+}
+body{
+    background-image:url('bg_college.jpg');
+    
+
+}
+
+#topics{
+    display: flex;
+        justify-content: space-between;
+        max-width: 70%;
+        margin: auto;
+    
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Header content remains unchanged -->
+        <nav>
+            <div class="logo">
+                <a href="#">Explore Careers.</a>
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class="bi bi-list"></i>
+                </div>
+            </label>
+            <ul>
+                <li class="headli"><a href="index.html" class="active">Home</a></li>
+                <li class="headli"><a href="services.html">Services</a></li>
+                <li class="headli"><a href="about.html">About</a></li>
+                <li class="headli"><a href="about.html">Contact</a></li>
+                <li class="headli"><a href="signin.html">Sign-In / Sign-Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <label for="topics" style="margin-left: 230px; margin-top: 16px;">Select your desired Field:</label>
+        <select id="topics" onchange="showContent()">
+            <!-- Select options remain unchanged -->
+            <option value="topic0" disabled selected id="select">Select a Field</option>
+            <option value="topic1">Engineering</option>
+            <option value="topic2">Medical & Healthcare</option>
+            <option value="topic3">Defence & Security</option>
+            <option value="topic4">Civil Services</option>
+            <option value="topic5">Teaching & Education</option>
+            <option value="topic6">Law & Legal Services</option>
+            <option value="topic7">Hospitality & Tourism</option>
+            <option value="topic8">Finance & Accounting</option>
+            
+        </select>
+        <div  class="center-flex" id="gov_pri">
+            <input type="radio" id="radio1"  name="radios" onchange="showSections()">
+            <label for="radio1" style="padding-top: 10px ; color: black;">Show Exams</label>
+            <input type="radio" id="radio2" name="radios" onchange="showSections()">
+            <label for="radio2" style="padding-top: 10px ; color: black;">Show Jobs</label>
+        </div>
+        <div id="content">
+                      
+            <div id="topic1">
+     <div id="exams">
+                <section>
+                    <div class="product">
+                        <img src="https://www.educationkey.in/wp-content/uploads/2022/11/gate.png" alt="Product Image">
+                        <div class="product-info">
+                            <h2>GATE (Graduate Aptitude Test in Engineering)</h2> <p> GATE is a national-level examination conducted jointly by the Indian Institute of Science (IISc) and seven Indian Institutes of Technology (IITs) on behalf of the National Coordination Board (NCB)-GATE, Department of Higher Education, Ministry of Education (MoE), Government of India. It is primarily conducted for admission to postgraduate programs (M.Tech/Ph.D.) in Indian institutes and for recruitment in various public sector companies. GATE evaluates candidates' understanding of undergraduate engineering and science subjects, covering a wide range of disciplines such as engineering, technology, architecture, and applied science.</p>
+                           
+                        </div>
+                    </div>
+            
+                   
+                </section>
+                
+                <section>
+                    <div class="product">
+                        <img src="https://easyengineering.net/wp-content/uploads/2020/08/UPSC-IES-LOGO.gif" alt="Product Image">
+                        <div class="product-info">
+                            <h2>ESE/IES (Engineering Services Examination)</h2> <p>  Conducted by the Union Public Service Commission (UPSC), ESE/IES is a prestigious examination for recruitment to various engineering services in the government of India. The examination consists of four stages - Preliminary, Mains, Personality Test, and Medical Examination. ESE/IES assesses candidates' engineering knowledge, aptitude, and technical understanding. It covers a wide range of engineering disciplines including Civil Engineering, Mechanical Engineering, Electrical Engineering, and Electronics & Telecommunication Engineering. Successful candidates may be appointed as Class-1 officers in various departments such as Indian Railways, Central Engineering Services, Central Water Engineering Service, and many others, serving in various engineering roles.</p>
+                           
+                        </div>
+                    </div>
+                  
+                   
+                </section>
+                <section>
+                    <div class="product">
+                        <img src="https://pbs.twimg.com/profile_images/1687323836432449537/FiF2dn72_400x400.jpg" alt="Product Image">
+                        <div class="product-info">
+                            <h2>JAM (Joint Admission Test for M.Tech)</h2> <p>  JAM is an entrance examination conducted for admission to Master of Technology (M.Tech) programs at Indian Institutes of Technology (IITs) and other premier institutes in India. Organized by the IITs and IISc on a rotational basis, JAM evaluates candidates' understanding of undergraduate subjects in science and technology. The exam is open to candidates from various academic backgrounds including Physics, Chemistry, Mathematics, Mathematical Statistics, and Geology. JAM scores are also used for admission to Integrated Ph.D. programs at IISc and other M.Sc. (Two Years), Joint M.Sc.-Ph.D., M.Sc.-Ph.D. Dual Degree, and other Post-Bachelor Degree programs.</p>
+                           
+                        </div>
+                    </div>
+                  
+                   
+                </section>
+                <section>
+                    <div class="product">
+                        <img src="https://i.pinimg.com/originals/66/17/c9/6617c9be37e2ad72a5fbc143d45bce26.jpg" alt="Product Image">
+                        <div class="product-info">
+                            <h2>CAT (Common Admission Test)</h2> <p> CAT is a national-level MBA entrance exam conducted by the Indian Institutes of Management (IIMs) for admission to their postgraduate management programs (MBA) and other top business schools in India. CAT assesses candidates' quantitative, verbal, and logical reasoning abilities through multiple-choice questions (MCQs) and non-MCQs. The exam is divided into three sections: Quantitative Ability (QA), Verbal Ability and Reading Comprehension (VARC), and Data Interpretation and Logical Reasoning (DILR). CAT scores are accepted by numerous management institutes across India besides the IIMs, making it one of the most competitive and sought-after management entrance exams in the country.</p>
+                           
+                        </div>
+                    </div>
+               
+                   
+                </section>
+                <section>
+                    <div class="product">
+                        <img src="https://media.getmyuni.com/assets/images/articles/articles-883e0ec1e979063315b4586b82814914.webp" alt="Product Image">
+                        <div class="product-info">
+                            <h2>CMAT (Common Management Admission Test)</h2> <p> CMAT is a national-level entrance exam conducted by the National Testing Agency (NTA) for admission to management programs approved by the All India Council for Technical Education (AICTE). CMAT assesses candidates' Quantitative Technique, Logical Reasoning, Language Comprehension, and General Awareness. The exam is conducted in computer-based mode and consists of multiple-choice questions (MCQs). CMAT scores are accepted by over 1000 AICTE-approved institutions offering MBA and PGDM programs across India. It is one of the largest management entrance exams in the country, providing candidates an opportunity to secure admission to a wide range of management institutes.</p>
+                           
+                        </div>
+                    </div>
+              
+                   
+                </section>
+                <section>
+                    <div class="product">
+                        <img src="https://img.jagrantv.com/article/rc1033008/1656932904-ugc-net-latest-news.jpg" alt="Product Image">
+                        <div class="product-info">
+                            <h2>NET (National Eligibility Test)</h2> <p>  NET is a national-level examination conducted by the National Testing Agency (NTA) on behalf of the University Grants Commission (UGC) for determining the eligibility of Indian nationals for Assistant Professor and Junior Research Fellowship (JRF) in Indian universities and colleges. The exam is conducted in multiple subjects and assesses candidates' proficiency in the subject chosen for postgraduation along with general awareness. NET is conducted twice a year in online mode. Qualifying NET opens up opportunities for teaching positions in universities and colleges as well as for pursuing research through Junior Research Fellowship (JRF).</p>
+                           
+                        </div>
+                    </div>
+              
+                   
+                </section>
+            </div>
+            <div id="jobs">
+                <section>
+                    <div class="product">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFWSJxsqNHh799YM47FDCzXJX183INx4icecUYpkpd5Q&s" alt="Product Image">
+                        <div class="product-info">
+                            <h2>Software Engineer / Developer </h2>
+                            <p>A software engineer designs, develops, and maintains software applications, systems, and websites. They analyze users' needs and then design, test, and develop software to meet those needs. Software engineers work across various domains such as web development, mobile application development, software testing, and system integration. They use programming languages like Java, Python, C++, or JavaScript, along with various tools and frameworks. Problem-solving, analytical thinking, and a strong understanding of computer science principles are essential skills for a software engineer. Collaboration with other team members and continuous learning are also crucial aspects of this role.
+                            </p>
+                           
+                        </div>
+                    </div>
+                  
+                </section>
+                <section>
+                    <div class="product">
+                        <img src="https://www.chitkara.edu.in/blogs/wp-content/uploads/2023/04/Mechanical_Engineers_Work-3.jpg" alt="Product Image">
+                        <div class="product-info">
+                            <h2>Mechanical Engineer </h2>
+                            <p> Mechanical engineers design and develop mechanical systems, tools, and machines. They apply principles of physics and materials science to solve engineering problems and create innovative solutions. Mechanical engineers work on a wide range of projects, from transportation systems to industrial equipment, ensuring that systems are safe, reliable, and efficient. They use computer-aided design (CAD) software to create and test prototypes, analyze data to improve designs, and collaborate with other engineers and professionals to bring projects to completion. Mechanical engineers play a crucial role in various industries, including automotive, aerospace, manufacturing, and energy.
+                            </p>
+                           
+                        </div>
+                    </div>
+                    
+                </section>
+                <section>
+                    <div class="product">
+                        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/3GgkKundG6WGpPHOPFBdDq/7cba9177de38af6c6fd9f30b7d377a91/Construction-workers-and-architect-looking-at-blueprints-on-construction-site-514311930_5413x3609__1_.jpeg?w=1500&h=680&q=60&fit=fill&f=faces&fm=jpg&fl=progressive&auto=format%2Ccompress&dpr=1&w=1000" alt="Product Image">
+                        <div class="product-info">
+                            <h2>Civil Engineer </h2>
+                            <p> Civil engineers design and oversee the construction of infrastructure projects such as roads, bridges, buildings, and water supply systems. They ensure that structures are safe, stable, and sustainable, meeting the needs of communities. Civil engineers analyze survey reports, maps, and other data to plan projects, calculate costs, and estimate construction timelines. They use computer-aided design (CAD) software to create blueprints and models, and they work closely with architects, urban planners, and construction teams to ensure that projects are completed on time and within budget. Civil engineers play a vital role in shaping the built environment and improving quality of life.
+                            </p>
+                           
+                        </div>
+                    </div>
+                    
+                </section>
+                <section>
+                    <div class="product">
+                        <img src="https://www.chitkara.edu.in/wp-content/uploads/2023/12/01-electrical.jpg" alt="Product Image">
+                        <div class="product-info">
+                            <h2>Electrical Engineer </h2>
+                            <p>Electrical engineers design, develop, and test electrical equipment and systems. They work on projects such as power generation, transmission, and distribution, as well as electronics and telecommunications systems. Electrical engineers design and improve electrical systems, components, and products, ensuring they meet safety, reliability, and efficiency standards. They use computer-aided design (CAD) software to create and test prototypes, analyze data to improve designs, and collaborate with other engineers and professionals to bring projects to completion. Electrical engineers play a crucial role in various industries, including power generation, telecommunications, electronics, and manufacturing.
+                            </p>
+                           
+                        </div>
+                    </div>
+                    
+                </section>
+                <section>
+                    <div class="product">
+                        <img src="https://s30876.pcdn.co/wp-content/uploads/Research-Jobs-in-Chemical-Engineering-2-scaled-e1670412302983-1170x630.jpg.optimal.jpg" alt="Product Image">
+                        <div class="product-info">
+                            <h2>Chemical Engineer </h2>
+                            <p>Chemical engineers design and troubleshoot processes for the production of chemicals, fuels, drugs, and other products. They apply principles of chemistry, physics, and mathematics to develop efficient and safe manufacturing processes. Chemical engineers design equipment and facilities, conduct experiments to improve production processes, and oversee the operation and maintenance of production plants. They ensure that processes are cost-effective, environmentally friendly, and safe for workers and the public. Chemical engineers work in various industries, including pharmaceuticals, petrochemicals, food and beverage, and environmental protection, contributing to the development of new materials and products.
+                            </p>
+                           
+                        </div>
+                    </div>
+                   
+                </section>
+                <section>
+                    <div class="product">
+                        <img src="https://cache.careers360.mobi/media/presets/340X170/careers/banner_images/2022/5/18/IAS%20(1).jpg" alt="Product Image">
+                        <div class="product-info">
+                            <h2>Civil Services</h2>
+                            <p>Engineers can also opt for civil services as they are among the most mindful brains in the country, The Civil Services Examination (CSE) is a nationwide competitive examination conducted by the Union Public Service Commission (UPSC) in India. It is considered one of the toughest and most prestigious examinations in India. The CSE is conducted to recruit candidates for various Civil Services of the Government of India, including the Indian Administrative Service (IAS), Indian Foreign Service (IFS), Indian Police Service (IPS), and other Central Services. The examination consists of three stages - Preliminary Examination, Main Examination, and Personality Test (Interview). Candidates who qualify this examination are selected for various administrative positions in the Indian government.
+                            </p>
+                           
+                        </div>
+                    </div>
+                    
+                    
+                </section>
+                <section>
+                    <div class="product">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Sudan_Building_NDA_Logo.jpg/220px-Sudan_Building_NDA_Logo.jpg" alt="Product Image">
+                        <div class="product-info">
+                            <h2>Defence Services </h2>
+                            <p>After completing engineering, there are several opportunities to join the defense services in India. Through various entry schemes such as the Technical Entry Scheme (TES), Short Service Commission (Technical), University Entry Scheme (UES), Aeronautical Engineering Course, and Technical Graduate Course (TGC), engineering graduates can serve in the Indian Army, Indian Navy, and Indian Air Force. These entry schemes offer a unique opportunity to apply engineering skills in a dynamic and challenging environment, contributing to national defense and security. Whether through direct induction after graduation or during the final year of engineering studies, defense services provide an esteemed platform for engineering graduates to serve their country.
+                            </p>
+                           
+                        </div>
+                    </div>
+                    
+                    
+                </section>
+            </div>
+            </div>
+            
+            <div id="topic2">
+                <div id="exams1">
+                           <section>
+                               <div class="product">
+                                   <img src="https://www.admissionfever.com/Media/exmimg/logo/img04062023081206926.png" alt="Product Image">
+                                   <div class="product-info">
+                                       <h2>NEET PG (National Eligibility-cum-Entrance Test for Postgraduate)</h2> <p> NEET PG is a national-level entrance exam conducted by the National Board of Examinations (NBE) for admission to postgraduate medical courses (MD/MS/Diploma) in India. It is mandatory for all medical graduates to qualify NEET PG to pursue postgraduate medical courses in India. The exam is computer-based and assesses candidates' medical knowledge, understanding, clinical skills, and problem-solving abilities. NEET PG scores are accepted by government, private, and deemed medical universities across India. Qualifying NEET PG opens up opportunities for specialization and higher education in various medical disciplines.</p>
+                                      
+                                   </div>
+                               </div>
+                            
+                              
+                           </section>
+                           <section>
+                               <div class="product">
+                                   <img src="https://images.collegedunia.com/public/college_data/images/logos/AIIMS%20MBBS.png" alt="Product Image">
+                                   <div class="product-info">
+                                       <h2>AIIMS PG (All India Institute of Medical Sciences Post Graduate Entrance Exam)</h2> <p>  AIIMS PG is an entrance exam conducted by the All India Institute of Medical Sciences (AIIMS) for admission to postgraduate medical courses (MD/MS/MDS/DM/MCh) at AIIMS, New Delhi, and its affiliated institutions. It is one of the most prestigious medical entrance exams in India. The exam is held twice a year, and the selection is based on merit. AIIMS PG assesses candidates' medical knowledge, understanding, clinical skills, and problem-solving abilities. Qualifying AIIMS PG offers opportunities for advanced medical education, research, and specialization at one of the premier medical institutions in India.</p>
+                                      
+                                   </div>
+                               </div>
+                            
+                              
+                           </section>
+                           <section>
+                               <div class="product">
+                                   <img src="https://static.toiimg.com/thumb/msid-75886111,width-400,resizemode-4/75886111.jpg" alt="Product Image">
+                                   <div class="product-info">
+                                       <h2>PGIMER Entrance Exam (Postgraduate Institute of Medical Education and Research)</h2> <p>   PGIMER conducts its own entrance exam for admission to various postgraduate medical courses (MD/MS/MDS/DM/MCh) at PGIMER, Chandigarh. It is one of the leading medical entrance exams in India. The exam assesses candidates' medical knowledge, clinical skills, and problem-solving abilities. PGIMER entrance exam is highly competitive, and candidates are selected based on their performance in the exam. Qualifying PGIMER entrance exam offers opportunities for advanced medical education, research, and specialization at one of the premier medical institutions in India known for its academic excellence and research facilities.</p>
+                                      
+                                   </div>
+                               </div>
+                            
+                              
+                           </section>
+                           <section>
+                               <div class="product">
+                                   <img src="https://images.collegedunia.com/public/college_data/images/logos/jipmer%20logo.jpg" alt="Product Image">
+                                   <div class="product-info">
+                                       <h2>JIPMER PG (Jawaharlal Institute of Postgraduate Medical Education and Research Post Graduate Entrance Exam)</h2> <p> JIPMER PG is an entrance exam conducted by Jawaharlal Institute of Postgraduate Medical Education and Research (JIPMER), Puducherry, for admission to postgraduate medical courses (MD/MS/DM/MCh) at JIPMER and its affiliated campuses. It is a national-level entrance exam and is considered one of the prestigious medical entrance exams in India. JIPMER PG assesses candidates' medical knowledge, clinical skills, and problem-solving abilities. Qualifying JIPMER PG offers opportunities for advanced medical education, research, and specialization at one of the premier medical institutions in India known for its academic excellence and healthcare services.</p>
+                                      
+                                   </div>
+                               </div>
+                            
+                              
+                           </section>
+                           <section>
+                               <div class="product">
+                                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGOT4VW_Hw4pAVSzTnaoznzm0wAbQPoFCN8JaxoZR89Q&s" alt="Product Image">
+                                   <div class="product-info">
+                                       <h2>USMLE (United States Medical Licensing Examination)</h2> <p> The United States Medical Licensing Examination (USMLE) is a three-step examination for medical licensure in the United States. It assesses a physician's ability to apply knowledge, concepts, and principles and to demonstrate fundamental patient-centered skills. Step 1 evaluates understanding and application of basic science concepts, while Step 2 CK assesses medical knowledge and clinical science understanding. Step 2 CS evaluates clinical skills, including patient interaction and communication. Qualifying USMLE is essential for physicians to practice medicine in the United States, making it a crucial examination for medical graduates seeking to pursue a career in the US healthcare system.</p>
+                                      
+                                   </div>
+                               </div>
+                            
+                              
+                           </section>
+                          
+                       </div>
+                       <div id="jobs1">
+                           <section>
+                               <div class="product">
+                                   <img src="https://i0.wp.com/academiamag.com/wp-content/uploads/2022/12/1.jpg?fit=894%2C530&amp;ssl=1" alt="Product Image">
+                                   <div class="product-info">
+                                       <h2>Doctor (MBBS) </h2>
+                                       <p>Medical graduates can work as General Physicians after completing their MBBS degree. They diagnose and treat a wide range of medical conditions, prescribe medications, and provide preventive healthcare services. Doctors can work in hospitals, clinics, primary care centers, or start their own practice. They are responsible for examining patients, diagnosing illnesses, ordering and interpreting diagnostic tests, and developing treatment plans. Doctors play a crucial role in promoting health, preventing diseases, and providing medical care to patients of all ages. It is one of the most respected and rewarding professions, offering opportunities for continuous learning and professional growth.
+                                       </p>
+                                      
+                                   </div>
+                               </div>
+                               
+                               
+                           </section>
+                           <section>
+                               <div class="product">
+                                   <img src="https://www.verywellhealth.com/thmb/ONOPBux-S_XmDQLKdpntK0Rq1o8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/types-of-doctors-1736311_FINAL-dc121c4f860b4bbf9b594fc018a481dc.png" alt="Product Image">
+                                   <div class="product-info">
+                                       <h2>Specialist Doctor (MD/MS) </h2>
+                                       <p>After completing postgraduate specialization (MD/MS), medical graduates can work as specialist doctors in various fields such as Pediatrics, Obstetrics and Gynecology, Surgery, Orthopedics, Dermatology, Psychiatry, etc. Specialists diagnose and treat complex medical conditions within their area of expertise. They may work in hospitals, clinics, or private practices, providing advanced medical care to patients. Specialists may also conduct research, teach medical students and residents, and contribute to medical advancements in their field. Becoming a specialist doctor (MD/MS) offers opportunities for career advancement, higher earning potential, and the ability to make a significant impact in healthcare.
+                                       </p>
+                                      
+                                   </div>
+                               </div>
+                               
+                               
+                           </section>
+                           <section>
+                               <div class="product">
+                                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2yGuunOxLQQUpCbjtbH7xjShnH3iZKj20w_pyKz61SQ&s" alt="Product Image">
+                                   <div class="product-info">
+                                       <h2>Dentist (BDS/MDS)</h2>
+                                       <p> Dental graduates can work as Dentists after completing their Bachelor of Dental Surgery (BDS) degree. They diagnose and treat dental issues, perform dental procedures such as fillings, root canals, and extractions, and provide preventive dental care. Dentists may also specialize in various fields of dentistry through Master of Dental Surgery (MDS) programs, such as Orthodontics, Prosthodontics, Periodontics, Oral and Maxillofacial Surgery, etc. Dentists can work in private dental clinics, hospitals, government health departments, or academic institutions. They play a crucial role in promoting oral health and improving the quality of life for their patients.
+                                       </p>
+                                      
+                                   </div>
+                               </div>
+                               
+                               
+                           </section>
+                           <section>
+                               <div class="product">
+                                   <img src="https://i0.wp.com/www.mounthospitals.com/wp-content/uploads/2023/03/Duty-Medical-Officer-1.jpg?fit=1000%2C667&ssl=1" alt="Product Image">
+                                   <div class="product-info">
+                                       <h2>Medical Officer</h2>
+                                       <p> Medical graduates can work as Medical Officers in government or private hospitals, healthcare centers, or non-profit organizations. Medical Officers provide medical care to patients, diagnose illnesses, prescribe medications, and recommend treatments. They may work in various departments such as emergency medicine, general medicine, pediatrics, obstetrics and gynecology, etc. Medical Officers also provide preventive healthcare services, educate patients about health issues, and participate in community health programs. They play a crucial role in providing primary healthcare services, managing medical emergencies, and improving the overall health and well-being of the community.
+                                       </p>
+                                      
+                                   </div>
+                               </div>
+                               
+                               
+                           </section>
+                           <section>
+                               <div class="product">
+                                   <img src="https://futurehealthcaretoday.com/wp-content/uploads/2021/01/shutterstock_691541095-scaled.jpg" alt="Product Image">
+                                   <div class="product-info">
+                                       <h2>Medical Researcher</h2>
+                                       <p>Medical graduates can pursue a career in medical research by working in research institutions, pharmaceutical companies, or universities. Medical Researchers conduct experiments, analyze data, and publish findings to advance medical knowledge and develop new treatments and therapies. They may specialize in areas such as basic science research, clinical research, epidemiology, or translational research. Medical Researchers contribute to scientific discoveries, medical advancements, and the development of evidence-based medical practices. They play a crucial role in improving patient outcomes, preventing diseases, and addressing healthcare challenges through innovative research and scientific inquiry.
+                                       </p>
+                                      
+                                   </div>
+                               </div>
+                               
+                               
+                           </section>
+                           <section>
+                               <div class="product">
+                                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZicV1esqW20LlWeu1ipUCGbtyySRhscQZNy2xeFBAJA&shttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS45IugWxoC-eibccYggbiOFB4ij53L3Ll4WMO6AkoIeA&ss=" >
+                                   <div class="product-info">
+                                       <h2>Veterinarian</h2>
+                                       <p> Veterinarians are healthcare professionals who diagnose, treat, and research medical conditions and diseases of animals. After completing their Doctor of Veterinary Medicine (DVM) or Bachelor of Veterinary Science (BVSc) degree, veterinarians can work in various settings including private veterinary clinics, animal hospitals, research laboratories, zoos, wildlife sanctuaries, and government agencies. They provide medical care to a wide range of animals including pets, livestock, zoo animals, and wildlife. Veterinarians perform surgeries, administer vaccinations, prescribe medications, and provide preventive care to ensure the health and well-being of animals. They play a crucial role in promoting animal health, preventing diseases, and ensuring food safety.
+                                       </p>
+                                      
+                                   </div>
+                               </div>
+                               
+                               
+                           </section>
+                           <section>
+                               <div class="product">
+                                   <img src="https://www.thestatesman.com/wp-content/uploads/2020/11/QT-Nurse.jpg" alt="Product Image">
+                                   <div class="product-info">
+                                       <h2>Nurses </h2>
+                                       <p> Nurses play a vital role in healthcare delivery, working alongside doctors and other healthcare professionals to provide patient care. After completing their nursing degree (such as B.Sc Nursing or GNM), nurses can work in hospitals, clinics, nursing homes, community health centers, and other healthcare settings. They perform various duties including patient assessment, monitoring vital signs, administering medications, assisting with procedures, and providing emotional support to patients and their families. Nurses also educate patients about their health conditions, coordinate care plans, and advocate for patient rights. Nursing offers a rewarding career with opportunities for specialization, career advancement, and making a meaningful difference in patients' lives.
+                                       </p>
+                                      
+                                   </div>
+                               </div>
+                           
+                           </section>
+                       </div>
+            </div>
+                       
+                       
+                       <div id="topic3">
+                        <div id="exams2">
+                                   <section>
+                                       <div class="product">
+                                           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVXbzVux1cW1qXbmKBAXcgrNjZFWDghIrFAIIHGotF8A&s">
+                                           <div class="product-info">
+                                               <h2>Combined Defence Services (CDS) Examination</h2> <p>
+                                                The Combined Defence Services (CDS) Examination is conducted by the Union Public Service Commission (UPSC) twice a year to recruit candidates for the Indian Military Academy (IMA), Indian Naval Academy (INA), Air Force Academy (AFA), and Officers' Training Academy (OTA). It is a gateway for graduates to join the Indian Army, Navy, and Air Force as officers. The examination consists of a written test followed by an interview by the Services Selection Board (SSB). Candidates who qualify for the written exam and the SSB interview are then inducted into the respective academies after medical examination.</p>
+                                              
+                                           </div>
+                                       </div>
+                                   
+                                      
+                                   </section>
+                                   <section>
+                                       <div class="product">
+                                           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIt3wedAqHanJk-i399Rft7uK8N0yBxBrvs4q5JoVPnA&s" alt="Product Image">
+                                           <div class="product-info">
+                                               <h2>Air Force Common Admission Test (AFCAT)</h2> <p>  
+                                                The Air Force Common Admission Test (AFCAT) is conducted by the Indian Air Force (IAF) to select officers for various branches, including Flying Branch, Ground Duty (Technical), and Ground Duty (Non-Technical). It is conducted twice a year, and candidates who qualify for the AFCAT are called for further testing at the Air Force Selection Board (AFSB). The examination consists of multiple-choice questions covering subjects such as General Awareness, Verbal Ability in English, Numerical Ability, Reasoning, and Military Aptitude Test. Candidates who clear AFCAT and the subsequent AFSB interview are then recommended for training at the Air Force Academy.</p>
+                                              
+                                           </div>
+                                       </div>
+                                    
+                                      
+                                   </section>
+                                   <section>
+                                       <div class="product">
+                                           <img src="https://www.examsplanner.in/media/inet-exam.png" alt="Product Image">
+                                           <div class="product-info">
+                                               <h2>Indian Navy Entrance Test (INET)</h2> <p>   The Indian Navy Entrance Test (INET) is conducted by the Indian Navy to recruit officers in various branches, including Executive, Technical, and Education Branches. INET is conducted twice a year, and it is the entry point for both unmarried men and women to join the Indian Navy as officers. The exam consists of multiple-choice questions covering subjects such as English, Reasoning & Numerical Ability, and General Science & Mathematical Aptitude. Candidates who clear the INET are called for further testing at the Naval Selection Board (NSB). Successful candidates undergo training at the Indian Naval Academy (INA) before joining active duty.</p>
+                                              
+                                           </div>
+                                       </div>
+                                    
+                                      
+                                   </section>
+                                   <section>
+                                       <div class="product">
+                                           <img src="https://upsconline.com/wp-content/uploads/2020/11/Central-Armed-Police-Forces.jpg" alt="Product Image">
+                                           <div class="product-info">
+                                               <h2>Central Armed Police Forces (CAPF) Examination</h2> <p> 
+                                                The Central Armed Police Forces (CAPF) Examination is conducted by the Union Public Service Commission (UPSC) to recruit Assistant Commandants in various paramilitary forces of India. The paramilitary forces include the Border Security Force (BSF), Central Reserve Police Force (CRPF), Central Industrial Security Force (CISF), Indo-Tibetan Border Police (ITBP), and Sashastra Seema Bal (SSB). The examination consists of a written test followed by a Physical Standards Test (PST), Physical Efficiency Test (PET), Medical Standards Test, and a personal interview. Successful candidates are then appointed as Assistant Commandants in the respective paramilitary forces.</p>
+                                              
+                                           </div>
+                                       </div>
+                                    
+                                      
+                                   </section>
+                                   <section>
+                                       <div class="product">
+                                           <img src="https://static.toiimg.com/thumb/msid-108224729,width-1070,height-580,imgsize-487423,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg" alt="Product Image">
+                                           <div class="product-info">
+                                               <h2>Sub-Inspector (SI) Examination</h2> <p> The Sub-Inspector (SI) Examination is conducted by various state police departments and other law enforcement agencies to recruit candidates for the position of Sub-Inspector (SI). The examination is conducted at the state level and the eligibility criteria, exam pattern, and syllabus may vary from state to state. Generally, the selection process includes a written examination, physical efficiency test (PET), physical measurement test (PMT), medical examination, and a personal interview. The written examination consists of multiple-choice questions covering subjects such as General Knowledge, General English, Numerical Ability, Reasoning, and Aptitude. Upon successful completion of all stages of the selection process, candidates are appointed as Sub-Inspectors in the respective police departments or law enforcement agencies.
+                                               </p>
+                                              
+                                           </div>
+                                       </div>
+                                    
+                                      
+                                   </section>
+                                   <section>
+                                    <div class="product">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJa4CAHK1XoLADgAMjOZMiaSvT1ALVc6gcQ-icym2vCQ&s" alt="Product Image">
+                                        <div class="product-info">
+                                            <h2>Technical Graduate Course (TGC)</h2> <p>The Technical Graduate Course (TGC) is a direct entry scheme for engineering graduates (men) to join the Indian Army as commissioned officers. Conducted by the Indian Army, TGC offers an opportunity for engineering graduates to serve the nation in various technical branches. Candidates can apply for TGC through the official Indian Army website. Shortlisted candidates are called for the Service Selection Board (SSB) interview and medical examination. Upon successful completion of the selection process, candidates undergo training at the Officers Training Academy (OTA) and are commissioned as officers in the Indian Army's technical branches. TGC provides a prestigious career opportunity for engineering graduates to serve their country with honor and pride.</p>
+                                           
+                                        </div>
+                                    </div>
+                                 
+                                   
+                                </section>
+                                <section>
+                                    <div class="product">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWXaOtr6R1xaH3bd81QeYKoubGiN4x6C8ku8Y2rqp_Ag&s" alt="Product Image">
+                                        <div class="product-info">
+                                            <h2>NCC Special Entry Scheme</h2> <p> The NCC Special Entry Scheme is a direct entry scheme for NCC (National Cadet Corps) cadets to join the Indian Army as commissioned officers. Candidates must have served in the NCC Senior Division Army Wing with a minimum of two years of service and should have obtained a minimum of 'B' Grade in the 'C' Certificate Exam.</p>
+                                           
+                                        </div>
+                                    </div>
+                                 
+                                   
+                                </section>
+                                <section>
+                                    <div class="product">
+                                        <img src="https://y20india.in/wp-content/uploads/2024/03/Indian-Army-Agniveer-Recruitment-2024-1024x683.webp" alt="Product Image">
+                                        <div class="product-info">
+                                            <h2>Agniveer Scheme</h2> <p>Agniveer is an organization that promotes Vedic wisdom and Hindu culture. They conduct various exams and quizzes related to Hinduism, Vedic knowledge, and Indian culture. These exams often cover topics such as Vedas, Upanishads, Indian history, philosophy, and spirituality. If you're interested in taking an Agniveer exam, you can check their website for more information on upcoming exams and how to register.</p>
+                                           
+                                        </div>
+                                    </div>
+                                 
+                                   
+                                </section>
+                               
+                               
+                               </div>
+                               <div id="jobs2">
+                                   <section>
+                                       <div class="product">
+                                           <img src="https://i.ytimg.com/vi/oq-tJN2FnZ4/maxresdefault.jpg" alt="Product Image">
+                                           <div class="product-info">
+                                               <h2>Lieutenant  in Indian Army </h2>
+                                               <p>A Lieutenant in the Indian Armed Forces is the first substantive officer rank. In the Army, a Lieutenant is responsible for leading a platoon of soldiers, usually consisting of around 30 to 50 personnel. They are tasked with planning and executing missions, ensuring discipline, and training their soldiers. In the Navy, Lieutenants serve as watch-keeping officers on board ships and are responsible for navigation, weapons systems, and overall ship operations. In the Air Force, Lieutenants may serve as pilots or in various technical and administrative roles. They undergo specialized training and gradually take on more responsibilities as they advance in rank.
+
+                                               </p>
+                                              
+                                           </div>
+                                       </div>
+                                       
+                                       
+                                   </section>
+                                   <section>
+                                       <div class="product">
+                                           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRcRG84wvHBqYbF-_VE02HWEXxE-1tiY0AIz1TwsM4cQ&s" alt="Product Image">
+                                           <div class="product-info">
+                                               <h2>Flying Officer in IAF </h2>
+                                               <p>A Flying Officer in the Indian Air Force is the first commissioned officer rank. Flying Officers are junior officers responsible for flying aircraft, performing technical duties, or serving in administrative and support roles. They undergo extensive training in aviation, including flight training and operational duties. As pilots, Flying Officers may fly various aircraft, including fighters, transport planes, and helicopters, depending on their specialization. They are also responsible for the maintenance and operation of aircraft systems. Additionally, Flying Officers may serve in ground-based roles, such as logistics, administration, or intelligence, supporting the overall mission of the Indian Air Force.
+                                               </p>
+                                              
+                                           </div>
+                                       </div>
+                                       
+                                       
+                                   </section>
+                                   <section>
+                                       <div class="product">
+                                           <img src="https://static.punjabkesari.in/multimedia/2020_11image_19_48_024241726ayushsoodinkangra.jpg" alt="Product Image">
+                                           <div class="product-info">
+                                               <h2>Sub Lieutenant in Indian Navy</h2>
+                                               <p>Sub Lieutenant is the entry-level commissioned officer rank in the Indian Navy. A Sub Lieutenant typically serves as a watch-keeping officer on board ships or submarines. Responsibilities include navigation, operation of weapons systems, and managing the ship's crew. Sub Lieutenants undergo rigorous training, including naval operations, navigation, engineering, and leadership. They are expected to learn and adapt quickly to the demanding environment of a naval vessel. As they gain experience and seniority, Sub Lieutenants can progress to higher ranks and take on more significant responsibilities within the Indian Navy.
+                                               </p>
+                                              
+                                           </div>
+                                       </div>
+                                       
+                                       
+                                   </section>
+                                   <section>
+                                       <div class="product">
+                                           <img src="https://vajiram-prod.s3.ap-south-1.amazonaws.com/CAPF_8fdfb21aca.jpeg" alt="Product Image">
+                                           <div class="product-info">
+                                               <h2>Assistant Commandant in Central Armed Police Forces</h2>
+                                               <p> After clearing the CAPF (Central Armed Police Forces) exam, candidates are eligible for the position of Assistant Commandant in various Central Armed Police Forces (CAPFs) such as the Border Security Force (BSF), Central Reserve Police Force (CRPF), Central Industrial Security Force (CISF), Indo-Tibetan Border Police (ITBP), and Sashastra Seema Bal (SSB). As an Assistant Commandant, you would be responsible for leading and supervising your team, ensuring the safety and security of the nation's borders, maintaining law and order in sensitive areas, and performing administrative and operational duties. It's a prestigious position with opportunities for growth and career advancement within the CAPFs.
+                                               </p>
+                                              
+                                           </div>
+                                       </div>
+                                       
+                                       
+                                   </section>
+                                   <section>
+                                       <div class="product">
+                                           <img src="https://hindi.cdn.zeenews.com/hindi/sites/default/files/styles/zm_700x400/public/2021/07/15/873032-up-police.jpg?itok=SJ0Ofj0e" alt="Product Image">
+                                           <div class="product-info">
+                                               <h2> Sub-Inspector (SI)</h2>
+                                               <p>As a Sub-Inspector (SI) in general, your role involves maintaining law and order, investigating crimes, and ensuring public safety. Working within law enforcement agencies such as the police, your responsibilities include conducting patrols, gathering evidence, interviewing witnesses, and making arrests when necessary. Sub-Inspectors also assist in the preparation of case files for prosecution and may testify in court. They often work closely with other law enforcement agencies and community members to prevent and solve crimes. It's a challenging yet rewarding role that requires strong leadership, integrity, and a commitment to serving the community.
+                                               </p>
+                                              
+                                           </div>
+                                       </div>
+                                       
+                                       
+                                   </section>
+                                   <section>
+                                       <div class="product">
+                                           <img src="https://www.financialexpress.com/wp-content/uploads/2023/01/Agniveer-2.jpg" alt="Product Image">
+                                           <div class="product-info">
+                                               <h2>Agniveers</h2>
+                                               <p> The Agnipath Scheme is the only route to serve in the military. The recruits named Agniveers serve for a tenure of four years that include training for six months followed by 3.5 years deployment. After retirement from the service, they will have the opportunity to apply to continue in the armed forces.
+                                               </p>
+                                              
+                                           </div>
+                                       </div>
+                                       
+                                       
+                                   </section>
+                                   
+                               </div>
+                               </div>
+                               
+                               <div id="topic4">
+                                <div id="exams3">
+                                          
+                                           <section>
+                                               <div class="product">
+                                                   <img src="https://static.toiimg.com/thumb/msid-97508495,width-400,resizemode-4/97508495.jpg" alt="Product Image">
+                                                   <div class="product-info">
+                                                       <h2>The Union Public Service Commission (UPSC) Civil Services Examination (CSE)</h2> <p>The Union Public Service Commission (UPSC) Civil Services Examination (CSE) is one of the most prestigious and competitive examinations in India. It offers opportunities to join elite civil services such as the Indian Administrative Service (IAS), Indian Police Service (IPS), and Indian Foreign Service (IFS), among others. The examination consists of three stages: Preliminary Examination, Main Examination, and Personal Interview. Successful candidates undergo rigorous training before assuming key administrative and leadership roles in the government. UPSC CSE provides a platform for talented individuals to serve the nation, shape policies, and contribute to the socio-economic development of the country.
+                                                       </p>
+                                                      
+                                                   </div>
+                                               </div>
+                                            
+                                              
+                                           </section>
+                                           <section>
+                                            <div class="product">
+                                                <img src="https://mycareersview.com/afile/mcv13854_StatePublicServiceCommission.jpg" alt="Product Image">
+                                                <div class="product-info">
+                                                    <h2>State Public Service Commission (PSC)</h2> <p>
+                                                        State Public Service Commissions (PSCs) conduct various civil services examinations at the state level. These examinations offer opportunities to serve in state government departments and agencies. Some of the major state civil services examinations include State Civil Services, State Police Services, State Forest Services, State Engineering Services, State Judicial Services, and State Education Services, among others. Each state PSC conducts its own examinations based on the specific requirements of the state government. These examinations typically consist of multiple stages, including Preliminary Examination, Main Examination, and Personal Interview. Successful candidates are appointed to various administrative, policing, judicial, and other government positions within the respective state.</p>
+                                                   
+                                                </div>
+                                            </div>
+                                         
+                                           
+                                        </section>
+                                        <section>
+                                            <div class="product">
+                                                <img src="https://media.collegedekho.com/media/img/careers/indian-forest-officer.jpg" alt="Product Image">
+                                                <div class="product-info">
+                                                    <h2>Indian Forest Service Examination </h2> <p>The Indian Forest Service (IFS) Examination, conducted by the Union Public Service Commission (UPSC), is a prestigious civil services examination in India. It provides opportunities to work in forest and wildlife management, environmental conservation, and related fields. IFS officers play a crucial role in the sustainable management and conservation of India's forests and wildlife resources. The examination consists of three stages: Preliminary Examination, Main Examination, and Personality Test. Successful candidates undergo rigorous training before being appointed to various positions in the Indian Forest Service. IFS officers work in close coordination with other government agencies and stakeholders to protect and manage India's natural resources.</p>
+                                                   
+                                                </div>
+                                            </div>
+                                         
+                                           
+                                        </section>
+                                        <section>
+                                            <div class="product">
+                                                <img src="https://static.wixstatic.com/media/8ffd4d_cf84319562b940b4a2903d372e5daabc~mv2.jpg/v1/fill/w_560,h_560,al_c,lg_1,q_80/8ffd4d_cf84319562b940b4a2903d372e5daabc~mv2.jpg" alt="Product Image">
+                                                <div class="product-info">
+                                                    <h2>Indian Statistical Service Examination (ISS)</h2> <p>The Indian Statistical Service (ISS) Examination, conducted by the Union Public Service Commission (UPSC), is a prestigious examination that offers opportunities to work in the field of statistics and data analysis for the Government of India. ISS officers are responsible for collecting, analyzing, and interpreting statistical data to support evidence-based policymaking and decision-making. The examination consists of two stages: Written Examination and Interview. Successful candidates undergo training before being appointed to various statistical positions in government departments and agencies, including the Ministry of Statistics and Programme Implementation, Central Statistical Office, and other statistical organizations. ISS officers play a crucial role in shaping India's economic and social policies through data-driven insights.</p>
+                                                   
+                                                </div>
+                                            </div>
+                                         
+                                           
+                                        </section>
+                                       
+                                       
+                                       </div>
+                                       <div id="jobs3">
+                                           <section>
+                                               <div class="product">
+                                                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6UXt9uUbcG6pfli2iXXJU3Ejk0xfbt-qhC0ZgKbqylg&s" alt="Product Image">
+                                                   <div class="product-info">
+                                                       <h2>Indian Administrative Service (IAS)</h2>
+                                                       <p>
+                                                        The Indian Administrative Service (IAS) examination, conducted by the Union Public Service Commission (UPSC), is renowned for its prestige and competitiveness. IAS officers, positioned at the helm of government affairs, hold pivotal roles in policy formulation, implementation, and administration at both central and state levels. The examination comprises three stages: Preliminary Examination, Main Examination, and Personal Interview. Successful candidates are appointed to crucial administrative positions, such as district magistrates, commissioners, and secretaries, influencing governance and development across India. IAS officers wield significant authority, serving as catalysts for socio-economic progress and driving impactful change in the nation's landscape.
+        
+                                                       </p>
+                                                      
+                                                   </div>
+                                               </div>
+                                               
+                                               
+                                           </section>
+                                           <section>
+                                               <div class="product">
+                                                   <img src="https://careerhub.brainwonders.in/assets/career_media/2020/11/career_2020-11-25-11-07-43Indian_Administrative_Service_Officer_(IAS_Officer).webp" alt="Product Image">
+                                                   <div class="product-info">
+                                                       <h2>Indian Police Service (IPS) </h2>
+                                                       <p>
+                                                        The Indian Police Service (IPS) examination, conducted by the Union Public Service Commission (UPSC), is one of the most prestigious civil services examinations in India. IPS officers are responsible for maintaining law and order, preventing and investigating crimes, and ensuring public safety. They hold key positions in the police department at both the central and state levels, including Commissioner of Police, Deputy Inspector General, Superintendent of Police, and Assistant Superintendent of Police. The IPS examination consists of three stages: Preliminary Examination, Main Examination, and Personal Interview. Successful candidates undergo rigorous training before being appointed to various leadership positions in the police force, contributing significantly to the nation's security and welfare.
+                                                       </p>
+                                                      
+                                                   </div>
+                                               </div>
+                                               
+                                               
+                                           </section>
+                                           <section>
+                                               <div class="product">
+                                                   <img src="https://cdn.zeebiz.com/sites/default/files/2022/09/25/202023-jaishankar-reuters.jpg" alt="Product Image">
+                                                   <div class="product-info">
+                                                       <h2>Indian Foreign Service (IFS)</h2>
+                                                       <p>The Indian Foreign Service (IFS) examination, conducted by the Union Public Service Commission (UPSC), is among the most prestigious civil services examinations in India. IFS officers represent India in international relations, diplomacy, and foreign affairs. They serve in Indian embassies and consulates abroad, as well as in the Ministry of External Affairs and other government departments at home. The examination consists of three stages: Preliminary Examination, Main Examination, and Personal Interview. Successful candidates undergo comprehensive training before taking up their roles. IFS officers play a crucial role in promoting India's interests globally, fostering diplomatic relations, and contributing to international peace and cooperation.
+                                                       </p>
+                                                      
+                                                   </div>
+                                               </div>
+                                               
+                                               
+                                           </section>
+                                           <section>
+                                               <div class="product">
+                                                   <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Indian_Revenue_Service_Logo.png" alt="Product Image">
+                                                   <div class="product-info">
+                                                       <h2>Indian Revenue Service (IRS)</h2>
+                                                       <p>The Indian Revenue Service (IRS) examination, conducted by the Union Public Service Commission (UPSC), is a prestigious civil services examination in India. IRS officers are responsible for the administration and collection of taxes for the Government of India. They work in various departments such as the Income Tax Department, Customs and Central Excise Department, and Goods and Services Tax (GST) Department. The examination consists of three stages: Preliminary Examination, Main Examination, and Personal Interview. Successful candidates undergo training before taking up their roles. IRS officers play a crucial role in ensuring compliance with tax laws and contributing to the country's revenue generation and economic development.
+                                                       </p>
+                                                      
+                                                   </div>
+                                               </div>
+                                               
+                                               
+                                           </section>
+                                           <section>
+                                               <div class="product">
+                                                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5BTe_GqmCknZ1PpiqkhqZdHBftFgC4lyuaBuf7UC2ZQ&s" alt="Product Image">
+                                                   <div class="product-info">
+                                                       <h2> Indian Audit and Accounts Service (IAAS)</h2>
+                                                       <p>
+                                                        The Indian Audit and Accounts Service (IAAS) examination, conducted by the Union Public Service Commission (UPSC), is a prestigious civil services examination in India. IAAS officers are responsible for auditing government accounts and ensuring financial transparency and accountability. They work in various departments such as the Comptroller and Auditor General (CAG) office, the Indian Audit and Accounts Department, and other government auditing agencies. The examination consists of three stages: Preliminary Examination, Main Examination, and Personal Interview. Successful candidates undergo training before taking up their roles. IAAS officers play a crucial role in promoting fiscal discipline and efficiency in government expenditure.
+                                                       </p>
+                                                      
+                                                   </div>
+                                               </div>
+                                               
+                                               
+                                           </section>
+                                           <section>
+                                               <div class="product">
+                                                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfQXzym5t70gtvmGKOZuDGIpal4_5n9RHZvkGBXbOITQ&s" alt="Product Image">
+                                                   <div class="product-info">
+                                                       <h2>The Indian Railway Traffic Service (IRTS)</h2><p>The Indian Railway Traffic Service (IRTS) examination, conducted by the Union Public Service Commission (UPSC), is a prestigious civil services examination in India. IRTS officers are responsible for managing the traffic operations of Indian Railways, including freight and passenger services, scheduling, and infrastructure management. They work in various departments such as Operations, Commercial, and Marketing of Indian Railways. The examination consists of three stages: Preliminary Examination, Main Examination, and Personal Interview. Successful candidates undergo training before taking up their roles. IRTS officers play a crucial role in ensuring the smooth functioning and efficiency of the Indian Railways network.
+                                                       </p>
+                                                      
+                                                   </div>
+                                               </div>
+                                               
+                                               
+                                           </section>
+                                           
+                                       </div>
+                                       </div>
+                                      
+                                       <div id="topic5">
+                                        <div id="exams4">
+                                                  
+                                                   <section>
+                                                       <div class="product">
+                                                           <img src="https://img.studydekho.com/uploads/c/2022/3/17631-c-whatsapp-image-2022-03-28-at-94428-pm.jpeg" alt="Product Image">
+                                                           <div class="product-info">
+                                                               <h2>Central Teacher Eligibility Test (CTET)</h2> <p>The Central Teacher Eligibility Test (CTET) is a national-level entrance exam conducted by the Central Board of Secondary Education (CBSE) in India. It is a qualifying exam for candidates aspiring to become teachers in central government schools such as Kendriya Vidyalayas (KVs) and Navodaya Vidyalaya Samiti (NVS), as well as schools under the administrative control of Union Territories. The CTET exam is conducted twice a year, usually in July and December. It consists of two papers - Paper-I for teachers of classes 1 to 5, and Paper-II for teachers of classes 6 to 8. Candidates can appear for either or both papers.
+                                                               </p>
+                                                              
+                                                           </div>
+                                                       </div>
+                                                    
+                                                      
+                                                   </section>
+                                                   <section>
+                                                    <div class="product">
+                                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgfzHXoRDuYqKd7guBKTiql_lq3jEsVppyHNfDMGh-1Q&s" alt="Product Image">
+                                                        <div class="product-info">
+                                                            <h2>State Teacher Eligibility Test (STET)</h2> <p>
+                                                                The State Teacher Eligibility Test (STET) is an entrance examination conducted by state governments in India to assess the eligibility of candidates for teaching positions in state government schools. STET is mandatory for those who wish to become teachers for classes 1 to 8 in government schools. Each state conducts its own STET, such as Uttar Pradesh Teacher Eligibility Test (UPTET), Bihar Teacher Eligibility Test (BTET), Maharashtra Teacher Eligibility Test (MAHATET), etc. The exam usually consists of two papers - Paper-I for teachers of classes 1 to 5 and Paper-II for teachers of classes 6 to 8.
+                                                            </p>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                 
+                                                   
+                                                </section>
+                                                <section>
+                                                    <div class="product">
+                                                        <img src="https://www.careerindia.com/img/2014/04/15-ugcnet.jpg" alt="Product Image">
+                                                        <div class="product-info">
+                                                            <h2>National Eligibility Test (NET)</h2> <p>The National Eligibility Test (NET) is a national-level entrance exam conducted by the National Testing Agency (NTA) on behalf of the University Grants Commission (UGC) in India. NET is conducted to determine the eligibility of candidates for the role of Assistant Professor and/or Junior Research Fellowship (JRF) in Indian universities and colleges. The exam is held for various subjects and consists of two papers - Paper-I and Paper-II. Paper-I is common for all candidates and tests teaching and research aptitude, while Paper-II assesses the candidate's subject knowledge. NET is conducted twice a year, usually in June and December.</p>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                 
+                                                   
+                                                </section>
+                                                <section>
+                                                    <div class="product">
+                                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUqvu5r5eNzSj9GU0-JcSoEWcvyqAnxeRvOs-nHNYxsQ&s" alt="Product Image">
+                                                        <div class="product-info">
+                                                            <h2>The Regional Institute of Education (RIE)</h2> <p>The Regional Institute of Education (RIE) Entrance Test is conducted by the National Council of Educational Research and Training (NCERT) for admission to various undergraduate and postgraduate teacher education programs. These programs include B.Ed., B.Ed.-M.Ed. Integrated, B.Sc.-B.Ed., B.A.-B.Ed., and M.Ed. The RIE Entrance Test is held for admission to Regional Institutes of Education located across different regions of India. The exam assesses candidates' aptitude in teaching, general knowledge, reasoning ability, and subject knowledge. It is an important exam for those aspiring to pursue a career in teaching and education. Candidates should carefully review the specific requirements and syllabus for the program they wish to apply for.</p>
+                                                           
+                                                        </div>
+                                                    </div>
+                                                   
+                                                   
+                                                </section>
+                                               
+                                               
+                                               </div>
+                                               <div id="jobs4">
+                                                   <section>
+                                                       <div class="product">
+                                                           <img src="https://assets.telegraphindia.com/telegraph/2023/Jun/1686750640_teachers.jpg" alt="Product Image">
+                                                           <div class="product-info">
+                                                               <h2>School teacher</h2>
+                                                               <p>
+                                                               
+School teachers play a crucial role in shaping the future by imparting knowledge and skills to students. They teach various subjects according to the curriculum, assess student performance, and provide feedback to help students learn and grow. School teachers create lesson plans, deliver lectures, conduct discussions, and organize activities to engage students effectively. They also collaborate with parents, school administrators, and other teachers to ensure the overall development of their students. A career as a school teacher in India offers the opportunity to make a meaningful impact on the lives of young learners and contribute to the education system.
+                
+                                                               </p>
+                                                              
+                                                           </div>
+                                                       </div>
+                                                       
+                                                       
+                                                   </section>
+                                                   <section>
+                                                       <div class="product">
+                                                           <img src="https://s02.sgp1.cdn.digitaloceanspaces.com/article/36033-loyvdwhulf-1465466124.jpg" alt="Product Image">
+                                                           <div class="product-info">
+                                                               <h2>College Lecturer/Assistant Professor </h2>
+                                                               <p>
+                                                           
+College lecturers or assistant professors play a vital role in higher education by teaching undergraduate and postgraduate students in colleges and universities. They deliver lectures, conduct seminars, and lead discussions on their area of expertise. College lecturers also guide students in their academic and professional development, provide mentorship, and supervise research projects. They may also be involved in curriculum development, assessment, and administrative responsibilities. A career as a college lecturer or assistant professor in India offers the opportunity to contribute to the academic growth of students, engage in research, and advance knowledge in their field of expertise.
+                                                               </p>
+                                                              
+                                                           </div>
+                                                       </div>
+                                                       
+                                                       
+                                                   </section>
+                                                   <section>
+                                                       <div class="product">
+                                                           <img src="https://www.americanprogress.org/wp-content/uploads/sites/2/2019/07/EducationResearch-CROP.jpg" alt="Product Image">
+                                                           <div class="product-info">
+                                                               <h2> Education researchers</h2>
+                                                               <p>
+                                                                Education researchers play a crucial role in advancing the field of education by conducting research on various aspects of teaching, learning, and educational policies. They design and conduct studies, collect and analyze data, and publish their findings in academic journals. Education researchers may focus on areas such as curriculum development, instructional methods, educational technology, student assessment, or education policy. They contribute to the improvement of teaching practices, educational outcomes, and the overall quality of education. A career as an education researcher in India offers the opportunity to make a significant impact on the education system and contribute to positive changes in teaching and learning.
+                                                               </p>
+                                                              
+                                                           </div>
+                                                       </div>
+                                                       
+                                                       
+                                                   </section>
+                                                  
+                                                   <section>
+                                                       <div class="product">
+                                                           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwqisNCad1e8DLz5Yfb1ON2cb_taeaYhJz8H5POPPGHA&s" alt="Product Image">
+                                                           <div class="product-info">
+                                                               <h2> Online Tutor</h2>
+                                                               <p>
+                                                             
+Online tutors provide personalized academic support to students through virtual platforms. They deliver lessons, assist with homework, and provide guidance in various subjects. Online tutors use video conferencing, chat, and interactive whiteboards to engage students and facilitate learning. They may work with students of all ages and levels, from elementary school to college. Online tutors tailor their teaching methods to meet the individual learning needs of each student and provide feedback to help them improve. A career as an online tutor in India offers flexibility, the opportunity to work from home, and the satisfaction of helping students succeed academically.
+                                                               </p>
+                                                              
+                                                           </div>
+                                                       </div>
+                                                       
+                                                       
+                                                   </section>
+                                          
+                                               </div>
+                                               </div>
+                                               <div id="topic6">
+                                                <div id="exams5">
+                                                          
+                                                           <section>
+                                                               <div class="product">
+                                                                   <img src="https://www.knowyourtutor.com/blog/wp-content/uploads/2019/02/CLAT-EXAM.png" alt="Product Image">
+                                                                   <div class="product-info">
+                                                                       <h2>Common Law Admission Test (CLAT)</h2> <p>
+                                                                        The Common Law Admission Test (CLAT) is a national-level entrance exam conducted for admission to undergraduate (LLB) and postgraduate (LLM) law programs at 22 National Law Universities (NLUs) and other participating institutions across India. CLAT assesses candidates' aptitude in English, general knowledge, mathematics, legal reasoning, and logical reasoning. The exam is conducted once a year, usually in May. CLAT scores are also accepted by some private and government law colleges for admission to their programs. It is one of the most popular and competitive law entrance exams in India, attracting thousands of candidates every year.
+                                                                       </p>
+                                                                      
+                                                                   </div>
+                                                               </div>
+                                                            
+                                                              
+                                                           </section>
+                                                           <section>
+                                                            <div class="product">
+                                                                <img src="https://legalbots.in/uploads/exams/exam_images/My_Post-13.jpg" alt="Product Image">
+                                                                <div class="product-info">
+                                                                    <h2>All India Law Entrance Test (AILET)</h2> <p>
+                                                                        The All India Law Entrance Test (AILET) is a national-level entrance exam conducted by the National Law University, Delhi (NLU Delhi) for admission to its BA LLB (Hons.), LLM, and PhD programs. AILET assesses candidates' aptitude in English, general knowledge, legal aptitude, reasoning, and elementary mathematics. The exam is conducted once a year, usually in May. AILET is one of the prestigious law entrance exams in India and offers admission to one of the most sought-after law programs at NLU Delhi, a premier law university in the country.
+                                                                    </p>
+                                                                   
+                                                                </div>
+                                                            </div>
+                                                         
+                                                           
+                                                        </section>
+                                                        <section>
+                                                            <div class="product">
+                                                                <img src="https://legalbots.in/uploads/exams/exam_images/My_Post-16.jpg" alt="Product Image">
+                                                                <div class="product-info">
+                                                                    <h2>Law School Admission Test (LSAT-India)</h2> <p>The Law School Admission Test (LSAT-India) is a standardized test conducted by the Law School Admission Council (LSAC) for admission to various law colleges and universities in India. LSAT-India assesses candidates' aptitude in logical reasoning, analytical reasoning, and reading comprehension. The exam does not have a prescribed syllabus, and it is designed to evaluate critical thinking skills rather than rote memorization. LSAT-India scores are accepted by several leading law colleges and universities in India. The exam is conducted multiple times a year, usually in the months of June and July.</p>
+                                                                   
+                                                                </div>
+                                                            </div>
+                                                       
+                                                        </section>
+                                                        <section>
+                                                            <div class="product">
+                                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZXCz3QTppYmL50z-adzcPmCXV-ajyfnr2pU9r_0NJig&s" alt="Product Image">
+                                                                <div class="product-info">
+                                                                    <h2>Bar Council of India (BCI) Examination</h2> <p>
+                                                                        The Bar Council of India (BCI) Examination is a mandatory requirement for law graduates in India who wish to practice law. After completing an LLB degree, candidates need to pass the BCI Examination to be eligible to practice law in India. The BCI Examination tests candidates on various aspects of law, including procedural laws, substantive laws, and professional ethics. It is conducted by the Bar Council of India, the statutory body that regulates the legal profession in India. Passing the BCI Examination is a crucial step for law graduates to obtain a license to practice law and enroll as advocates with any State Bar Council in India.</p>
+                                                                   
+                                                                </div>
+                                                            </div>
+                                                       
+                                                           
+                                                        </section>
+                                                       
+                                                       
+                                                       </div>
+                                                       <div id="jobs5">
+                                                           <section>
+                                                               <div class="product">
+                                                                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW-gqAalKZaV12Hge4KsI8oMDpejC5ubHkjUQvMslB-g&s" alt="Product Image">
+                                                                   <div class="product-info">
+                                                                       <h2>Advocate/Corporate Lawyer</h2>
+                                                                       <p>
+                                                                       
+       
+After completing a law degree in India, individuals can pursue a career as an advocate or a corporate lawyer. Advocates represent clients in legal matters, providing legal advice, drafting legal documents, and representing clients in court. They specialize in various areas of law such as civil law, criminal law, family law, and corporate law. On the other hand, corporate lawyers work for corporations, advising on business transactions, contracts, mergers, and acquisitions. They ensure that their clients' business practices comply with relevant laws and regulations and may specialize in areas such as corporate law, intellectual property law, or employment law.
+
+                        
+                                                                       </p>
+                                                                      
+                                                                   </div>
+                                                               </div>
+                                                       
+                                                           </section>
+                                                           <section>
+                                                               <div class="product">
+                                                                   <img src="https://i0.wp.com/thelegalquotient.com/wp-content/uploads/2023/08/Public-Prosecutor.jpg?fit=275%2C183&ssl=1" alt="Product Image">
+                                                                   <div class="product-info">
+                                                                       <h2>Public Prosecutor </h2>
+                                                                       <p>
+                                                                   
+        
+After completing a law degree in India, individuals can pursue a career as a Public Prosecutor. Public Prosecutors represent the state in criminal cases, ensuring that justice is served and the interests of the public are protected. They work on behalf of the government to prosecute individuals accused of committing crimes. Public Prosecutors are responsible for preparing and presenting cases in court, gathering evidence, examining witnesses, and ensuring that the law is upheld. They play a crucial role in the criminal justice system and work closely with law enforcement agencies to ensure that criminals are brought to justice.
+                                                                       </p>
+                                                                      
+                                                                   </div>
+                                                               </div>
+                                                           
+                                                           </section>
+                                                           <section>
+                                                               <div class="product">
+                                                                   <img src="https://images.shiksha.com/mediadata/images/articles/1700899813phpVei2rb.jpeg" alt="Product Image">
+                                                                   <div class="product-info">
+                                                                       <h2> Civil/District Judge</h2>
+                                                                       <p>
+                                                                        individuals can pursue a career as a Civil Judge or District Judge. Civil Judges preside over civil cases in the lower courts, while District Judges oversee the administration of justice in a district and preside over both civil and criminal cases. They are responsible for ensuring that court proceedings are conducted fairly and efficiently, and they make decisions based on the evidence presented in court and the application of relevant laws. Civil Judges and District Judges play a crucial role in the judicial system, upholding the rule of law and delivering justice to the people.
+                                                                       </p>
+                                                                      
+                                                                   </div>
+                                                               </div>
+                                                    
+                                                           </section>
+                                                          
+                                                           <section>
+                                                               <div class="product">
+                                                                   <img src="https://seeklogo.com/images/B/better-call-saul-logo-FAFDECCCBF-seeklogo.com.png" alt="Product Image">
+                                                                   <div class="product-info">
+                                                                       <h2> Legal Advisor</h2>
+                                                                       <p>
+                                                                     
+
+                                                                        After completing a law degree in India, individuals can pursue a career as a Legal Advisor. Legal Advisors provide legal advice and guidance to individuals, businesses, government agencies, or non-profit organizations. They help clients understand their legal rights and obligations, and assist them in navigating complex legal issues. Legal Advisors may specialize in various areas of law such as corporate law, labor law, intellectual property law, or family law, depending on the needs of their clients. They provide legal support in drafting contracts, agreements, and other legal documents, and represent clients in negotiations, mediations, and other legal proceedings.
+                                                                       </p>
+                                                                      
+                                                                   </div>
+                                                               </div>
+                                                               
+                                                               
+                                                           </section>
+                                                            
+                                                           <section>
+                                                            <div class="product">
+                                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb1wDINi1LNoiLy0rL3ysPK346DSRhEKnvHFwDCJF3Bg&s" alt="Product Image">
+                                                                <div class="product-info">
+                                                                    <h2> 
+                                                                        Legal Reporter</h2>
+                                                                    <p>
+                                                                
+                                                                        After completing a law degree in India, individuals can pursue a career as a Legal Reporter. Legal Reporters work for newspapers, magazines, online media, or television channels, covering legal news and events. They research and report on court cases, legislative developments, and legal issues of public interest. Legal Reporters attend court hearings, conduct interviews with lawyers, judges, and other legal experts, and write articles or prepare news segments for publication or broadcast. They play a crucial role in informing the public about legal matters, ensuring transparency in the legal system, and upholding the principles of justice and the rule of law.
+                                                                    </p>
+                                                                   
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            
+                                                        </section>
+                                               
+                                                  
+                                                       </div>
+                                                       </div>
+                                                      
+                 
+
+                <div id="topic7">
+                    <div id="exams6">
+                              
+                               <section>
+                                   <div class="product">
+                                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxtNWcDAn0nOS4_xGJhPO0gLy9mbY-vulu54p4XfwiqQ&s" alt="Product Image">
+                                       <div class="product-info">
+                                           <h2>NCHM JEE (National Council for Hotel Management Joint Entrance Examination)</h2> <p>
+                                           
+The National Council for Hotel Management Joint Entrance Examination (NCHM JEE) is an entrance exam conducted by the National Testing Agency (NTA) for admission to various hotel management courses offered at participating institutes across India, including the prestigious Institute of Hotel Management (IHM) institutes. It is a national-level exam that tests candidates on subjects such as Numerical Ability, Reasoning and Logical Deduction, General Knowledge & Current Affairs, English Language, and Aptitude for Service Sector. NCHM JEE scores are accepted by top hotel management institutes, making it a crucial exam for students aspiring to pursue a career in the hospitality industry.
+                                           </p>
+                                          
+                                       </div>
+                                   </div>
+                             
+                               </section>
+                               <section>
+                                <div class="product">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDXwikcLcXYvYOJCgCfftUWSwNxtT9Kv9QsLdhYcfXXw&s" alt="Product Image">
+                                    <div class="product-info">
+                                        <h2>AIH&TM (All India Hotel Management and Tourism Management Entrance Exam)</h2> <p>
+                                            The All India Hotel Management and Tourism Management Entrance Exam (AIH&TM) is conducted by Bharati Vidyapeeth Deemed University for admission to hotel management and tourism management courses at Bharati Vidyapeeth's Institute of Hotel Management and Catering Technology. It is an important entrance exam for students aspiring to pursue careers in the hospitality and tourism industry. The exam evaluates candidates on subjects such as Numerical Ability, Reasoning, General Knowledge, English Language, and Aptitude for Service Sector. AIH&TM provides a gateway for students to gain admission to reputable institutes and is a crucial step towards achieving their career goals in hospitality and tourism management.
+                                        </p>
+                                       
+                                    </div>
+                                </div>
+                              
+                               
+                            </section>
+                            <section>
+                                <div class="product">
+                                    <img src="https://www.iata.org/globalassets/iata/training/cbta/iata-cbta_corporate_rgb_large.png?width=400&height=320&rmode=crop&v=20220510135204" alt="Product Image">
+                                    <div class="product-info">
+                                        <h2>IATA (International Air Transport Association) Certification</h2> <p>
+                                            The International Air Transport Association (IATA) offers various certification programs related to the aviation, travel, and tourism industry. One of the most renowned certifications is the Foundation in Travel and Tourism Diploma. This certification covers a wide range of topics including air travel, geography, travel formalities, and customer service. It is designed to provide individuals with a comprehensive understanding of the travel and tourism sector, preparing them for various roles within the industry. The IATA certification is highly respected and recognized worldwide, making it a valuable asset for anyone looking to build a successful career in travel and tourism.</p>
+                                       
+                                    </div>
+                                </div>
+                           
+                            </section>
+                            <section>
+                                <div class="product">
+                                    <img src="https://www.mbaadmissionsinbangalore.com/storage/notifications/5f27fd01bb3fd_700_336.jpg" alt="Product Image">
+                                    <div class="product-info">
+                                        <h2>IITTM Admission Test (Indian Institute of Tourism and Travel Management Admission Test)</h2> <p>
+                                            The Indian Institute of Tourism and Travel Management Admission Test (IITTM Admission Test) is conducted by the Indian Institute of Tourism and Travel Management for admission to various undergraduate and postgraduate courses in tourism and travel management. It is a national-level entrance exam that evaluates candidates on subjects such as General Knowledge, English Language, Reasoning, and Aptitude for Tourism. The IITTM Admission Test is a crucial step for students aspiring to pursue careers in the tourism and travel industry, as it provides them with an opportunity to gain admission to reputable institutes and acquire the necessary skills and knowledge for a successful career in this field.</p>
+                                       
+                                    </div>
+                                </div>
+                           
+                               
+                            </section>
+                            <section>
+                                <div class="product">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsHkcL2Z_KMrVgP1GvWYTGKODMjlgNSPLZBFQP74R7yA&s" alt="Product Image">
+                                    <div class="product-info">
+                                        <h2>
+                                            The Certification in Travel and Tourism Management (CTTM) </h2><p> is a comprehensive certification program offered by various institutes in India. It covers a wide range of topics including travel geography, tour operations, ticketing, tourism marketing, and customer service. The CTTM program is designed to provide students with the necessary skills and knowledge to pursue a career in the travel and tourism industry. It is particularly beneficial for individuals who are interested in entry-level positions such as travel agents, tour operators, and tourism marketers. Upon completion of the program, students receive a recognized certification that enhances their employability and career prospects in the travel and tourism sector.</p>
+                                       
+                                    </div>
+                                </div>
+                           
+                               
+                            </section>
+                            <section>
+                                <div class="product">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFQKjIXvr57Zpx3jt1eTAIzB8fpB8-JRnOwLJKIXAw1Q&s" alt="Product Image">
+                                    <div class="product-info">
+                                        <h2>
+                                            Certification in Hotel Management and Catering Technology (CHMCT)</h2> <p>
+                                                The Certification in Hotel Management and Catering Technology (CHMCT) is a professional certification program offered by various institutes across India. It covers a wide range of subjects including food production, food and beverage service, housekeeping, front office operations, and hospitality management. The CHMCT program is designed to provide students with the necessary skills and knowledge to pursue a career in the hospitality industry. It is particularly beneficial for individuals who are interested in entry-level positions such as hotel management trainees, catering supervisors, and guest service associates. Upon completion of the program, students receive a recognized certification that enhances their employability and career prospects in the hospitality sector.</p>
+                                       
+                                    </div>
+                                </div>
+                           
+                               
+                            </section>
+                           
+                           
+                           </div>
+                           <div id="jobs6">
+                               <section>
+                                   <div class="product">
+                                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy-AUDgXDgkbER9OzimTTk_qwvFDm2hbIfFuD0llTi9Q&s" alt="Product Image">
+                                       <div class="product-info">
+                                           <h2> Hotel Manager</h2>
+                                           <p>
+                                            Hotel managers are responsible for overseeing the daily operations of a hotel, ensuring that guests have a pleasant experience during their stay. Their responsibilities include managing staff, handling customer complaints, monitoring budgets, and ensuring that the hotel complies with health and safety regulations. Hotel managers also play a key role in marketing and promoting the hotel to attract new guests and increase revenue. With their leadership and management skills, hotel managers ensure that the hotel runs smoothly and efficiently, providing guests with exceptional service and hospitality.
+
+                                           </p>
+                                          
+                                       </div>
+                                   </div>
+                           
+                               </section>
+                               <section>
+                                   <div class="product">
+                                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0KAxB9awgBLK0KnqEthqg5a-XZ0ep1_O4OxnvVHh8PA&s" alt="Product Image">
+                                       <div class="product-info">
+                                           <h2>Event Coordinator </h2>
+                                           <p>Event coordinators are responsible for planning and executing various events, such as weddings, conferences, parties, and corporate meetings. Their duties include liaising with clients to determine their event requirements, coordinating with vendors and suppliers, managing budgets, and overseeing the setup and execution of the event. Event coordinators also handle logistics, such as venue selection, catering, entertainment, and decorations, to ensure that the event runs smoothly and meets the client's expectations. With their attention to detail, organizational skills, and creativity, event coordinators create memorable experiences for clients and guests alike.
+                                           </p>
+                                          
+                                       </div>
+                                   </div>
+                               
+                               </section>
+                               <section>
+                                   <div class="product">
+                                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi7lUBQl3flp263aF9VsroUabdMPHy-A1GtJ2Wwt-hTw&s" alt="Product Image">
+                                       <div class="product-info">
+                                           <h2> Restaurant Manager</h2>
+                                           <p>
+                                            Restaurant managers oversee the daily operations of a restaurant, ensuring that it runs smoothly and efficiently. Their responsibilities include managing staff, supervising food preparation, monitoring inventory, and ensuring customer satisfaction. Restaurant managers also handle administrative tasks such as budgeting, scheduling, and ordering supplies. They are responsible for maintaining health and safety standards, as well as ensuring that the restaurant complies with food and beverage regulations. With their leadership skills, restaurant managers create a positive work environment and ensure that guests have a pleasant dining experience.
+                                           </p>
+                                          
+                                       </div>
+                                   </div>
+                        
+                               </section>
+                              
+                               <section>
+                                   <div class="product">
+                                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVqjer867CcluNC7_EWaNHE2y5IVRVX7HK48c1UhcM6g&s" alt="Product Image">
+                                       <div class="product-info">
+                                           <h2>Tour Guide</h2>
+                                           <p>Tour guides are responsible for leading groups of tourists on sightseeing tours to various destinations. Their duties include providing information about historical, cultural, and natural landmarks, as well as answering questions from tour participants. Tour guides must be knowledgeable about the destinations they are visiting and be able to communicate effectively with people from diverse backgrounds. They may work for tour companies, museums, historical sites, or government agencies. With their passion for travel and their ability to engage and educate others, tour guides play a crucial role in enhancing the travel experience for visitors.
+                                           </p>
+                                          
+                                       </div>
+                                   </div>
+                                
+                               </section>
+                                
+                               <section>
+                                <div class="product">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfvGug8v2QgoE9Jr7p5VW-efd5BXdidINJ_oJVQEjNfQ&s" alt="Product Image">
+                                    <div class="product-info">
+                                        <h2> 
+                                            Travel Agent</h2>
+                                        <p>Travel agents assist clients in planning and booking their travel arrangements, including flights, accommodations, transportation, and activities. They provide personalized recommendations based on clients' preferences, budget, and travel needs. Travel agents research various travel options, negotiate prices with suppliers, and handle reservations and bookings on behalf of their clients. They also provide information about travel restrictions, visa requirements, and travel insurance. With their expertise and knowledge of the travel industry, travel agents help clients navigate the complexities of travel planning, ensuring a smooth and enjoyable travel experience.
+                                        </p>
+                                       
+                                    </div>
+                                </div>
+                               
+                            </section>
+                            <section>
+                                <div class="product">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjGlTcZ5TrSfVwXajOmE61z-1mHm58E4ffEmAHnLX9JA&s" alt="Product Image">
+                                    <div class="product-info">
+                                        <h2> 
+                                            Food and Beverage Manager</h2>
+                                        <p>
+                                            Food and beverage managers are responsible for overseeing the food and beverage operations of restaurants, hotels, resorts, or other hospitality establishments. Their duties include managing kitchen staff, overseeing food preparation, and ensuring that food safety and quality standards are met. Food and beverage managers also develop menus, set prices, and manage inventory and suppliers. They are responsible for ensuring that guests have a positive dining experience by providing excellent service, resolving customer complaints, and maintaining a clean and welcoming environment. With their leadership skills and industry knowledge, food and beverage managers play a crucial role in the success of hospitality establishments.
+                                       
+                                    </div>
+                                </div>
+                               
+                            </section>
+                      
+                           </div>
+                </div>
+                           
+                          
+                <div id="topic8">
+                    <div id="exams7">
+                              
+                               <section>
+                                   <div class="product">
+                                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZaEL72Q5CUs8BMOd-x-zJwcrQu5H2ogrto5Pa_rrTjg&s" alt="Product Image">
+                                       <div class="product-info">
+                                           <h2>Chartered Accountant (CA)</h2> <p>
+                                            The Chartered Accountant (CA) qualification, offered by the Institute of Chartered Accountants of India (ICAI), is one of the most prestigious certifications in accounting and finance. Consisting of three levels—CA Foundation, CA Intermediate, and CA Final—the program equips candidates with comprehensive knowledge and skills in accounting, auditing, taxation, finance, and consultancy. With its rigorous curriculum and stringent examination process, CA is highly regarded by employers, opening up numerous career opportunities in India and internationally. Successful completion of the CA qualification demonstrates a high level of expertise and professionalism, making CAs highly sought-after professionals in the field of finance and accounting.
+                                           </p>
+                                          
+                                       </div>
+                                   </div>
+                             
+                               </section>
+                               <section>
+                                <div class="product">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1JUKSLmeNHzGXVeAP9L4zuPdvg7zG0wsyIYVqGxRNyQ&s" alt="Product Image">
+                                    <div class="product-info">
+                                        <h2>Certified Management Accountant (CMA)</h2> <p>
+                                            The Certified Management Accountant (CMA) certification, offered by the Institute of Cost Accountants of India (ICAI), is designed for professionals working in management accounting and financial management roles. The CMA program equips candidates with advanced knowledge and skills in areas such as financial planning, analysis, control, decision support, and professional ethics. Consisting of two parts—CMA Foundation and CMA Final—the program covers a wide range of topics including cost management, strategic management, performance management, and corporate finance. With its focus on practical knowledge and skills, the CMA certification is highly valued by employers, opening up rewarding career opportunities in finance and accounting.
+                                       
+                                    </div>
+                                </div>
+                              
+                               
+                            </section>
+                            <section>
+                                <div class="product">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3cCY7YmJ_8tCL266GIYiZ1E1tvEvmpTLqGU9Uj-YQmw&s" alt="Product Image">
+                                    <div class="product-info">
+                                        <h2>Chartered Financial Analyst (CFA)</h2> <p>
+                                            The Chartered Financial Analyst (CFA) program, offered by the CFA Institute, is a globally recognized certification for professionals working in investment management and financial analysis roles. The CFA program consists of three levels of exams, covering topics such as investment tools, asset valuation, portfolio management, and ethical and professional standards. Candidates must also have four years of qualified work experience to obtain the CFA charter. The CFA certification is highly respected in the finance industry for its rigorous curriculum and emphasis on ethics and professionalism. It opens up a wide range of career opportunities in investment management, wealth management, and financial analysis, both in India and internationally.</p>
+                                       
+                                    </div>
+                                </div>
+                           
+                            </section>
+                            <section>
+                                <div class="product">
+                                    <img src="https://5.imimg.com/data5/EG/UN/GLADMIN-49470267/association-of-chartered-certified-accountants-course.png" alt="Product Image">
+                                    <div class="product-info">
+                                        <h2>Association of Chartered Certified Accountants (ACCA)</h2> <p>
+                                         
+The Association of Chartered Certified Accountants (ACCA) qualification is a globally recognized certification for accounting professionals, offered by the Association of Chartered Certified Accountants. The ACCA program equips candidates with comprehensive knowledge and skills in accounting, finance, and business management. It consists of a series of exams covering areas such as financial reporting, taxation, audit and assurance, and strategic business management. With its focus on practical experience and professional ethics, the ACCA qualification is highly valued by employers worldwide. It opens up numerous career opportunities in accounting, finance, and business, both in India and internationally, making it a popular choice for aspiring accounting professionals.</p>
+                                       
+                                    </div>
+                                </div>
+                           
+                               
+                            </section>
+                            <section>
+                                <div class="product">
+                                    <img src="https://www.garp.org/hs-fs/hubfs/Website/FRM/Images/a2r5d000003oVAjAAM_FRM_Badge_web.png?width=318&name=a2r5d000003oVAjAAM_FRM_Badge_web.png" alt="Product Image">
+                                    <div class="product-info">
+                                        <h2>
+                                            Financial Risk Manager (FRM) </h2><p>
+                                                The Financial Risk Manager (FRM) certification, offered by the Global Association of Risk Professionals (GARP), is designed for professionals working in risk management and financial analysis roles. The FRM program equips candidates with advanced knowledge and skills in areas such as risk management techniques, financial markets and products, and quantitative analysis. It consists of two parts, each requiring candidates to pass a rigorous exam. With its focus on practical skills and real-world applications, the FRM certification is highly valued by employers in the banking, finance, and insurance sectors. It opens up rewarding career opportunities in risk management, financial analysis, and investment management, both in India and internationally.</p>
+                                       
+                                    </div>
+                                </div>
+                           
+                               
+                            </section>
+                            <section>
+                                <div class="product">
+                                    <img src="https://www.icofp.org/blog/wp-content/uploads/2018/06/cfp-icofp-1.jpg" alt="Product Image">
+                                    <div class="product-info">
+                                        <h2>
+                                            Certified Financial Planner (CFP)</h2> <p>
+                                                The Certified Financial Planner (CFP) certification, offered by the Financial Planning Standards Board India (FPSB India), is designed for professionals working in financial planning and wealth management roles. The CFP program equips candidates with comprehensive knowledge and skills in areas such as financial planning, investment planning, retirement planning, tax planning, and estate planning. It consists of a series of exams covering these areas, as well as a three-year work experience requirement. With its focus on ethical and professional standards, the CFP certification is highly valued by employers and clients alike. It opens up rewarding career opportunities in financial planning, wealth management, and advisory services, helping individuals and families achieve their financial goals and objectives.</p>
+                                       
+                                    </div>
+                                </div>
+                           
+                               
+                            </section>
+                           
+                           
+                           </div>
+                           <div id="jobs7">
+                               <section>
+                                   <div class="product">
+                                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlBafp-cy64IYUGzjxx40o1y-PVG0EkDPVpLaS_L1NjA&s" alt="Product Image">
+                                       <div class="product-info">
+                                           <h2>Accountant</h2>
+                                           <p>
+                                            Accountants are responsible for preparing and examining financial records, ensuring accuracy and compliance with laws and regulations. They analyze financial information to prepare financial statements, assess financial operations, and recommend process improvements. Accountants may specialize in areas such as auditing, tax preparation, or cost accounting. They play a crucial role in helping businesses and organizations manage their finances effectively, providing valuable insights for decision-making and ensuring compliance with financial regulations. With their attention to detail and expertise in financial matters, accountants are essential members of any finance team.
+
+                                           </p>
+                                          
+                                       </div>
+                                   </div>
+                           
+                               </section>
+                               <section>
+                                   <div class="product">
+                                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxgrWjLZSgYOD7fX75hGsRCBzgvRCHrdXezyvaF8wHyg&s" alt="Product Image">
+                                       <div class="product-info">
+                                           <h2>Financial analysts </h2>
+                                           <p>Financial analysts are responsible for analyzing financial data and trends to provide insights that help businesses make investment decisions. They assess the performance of stocks, bonds, and other types of investments to determine their potential for growth and profitability. Financial analysts also prepare financial reports, forecasts, and models to help businesses understand their financial position and make informed decisions. They may specialize in areas such as investment banking, corporate finance, or risk management. With their analytical skills and expertise in financial markets, financial analysts play a crucial role in helping businesses achieve their financial goals and objectives.
+                                           </p>
+                                          
+                                       </div>
+                                   </div>
+                               
+                               </section>
+                               <section>
+                                   <div class="product">
+                                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCsZpxDWJyekDYygXP3sVQydz2QNW-cOYT4oGpEMreMw&s" alt="Product Image">
+                                       <div class="product-info">
+                                           <h2>Auditor</h2>
+                                           <p>
+                                            Auditors are responsible for examining financial records and processes to ensure compliance with laws and regulations and to identify areas for improvement. They review financial statements, account books, and accounting systems to verify their accuracy and integrity. Auditors also assess the effectiveness of internal controls and risk management processes to identify and mitigate potential risks. They may specialize in areas such as internal auditing, external auditing, or forensic accounting. With their attention to detail and expertise in financial regulations, auditors help businesses and organizations maintain transparency and accountability in their financial operations.
+                                           </p>
+                                          
+                                       </div>
+                                   </div>
+                        
+                               </section>
+                              
+                          
+                                
+                               <section>
+                                <div class="product">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_McP4q0LVPHZaoWgdiY1aYMZqjTtOuHec32IWFnTIsw&s" alt="Product Image">
+                                    <div class="product-info">
+                                        <h2> 
+                                            Tax Accountant</h2>
+                                        <p>
+                                            Tax accountants specialize in preparing and filing tax returns for individuals and businesses, ensuring compliance with tax laws and regulations. They analyze financial data to determine tax liabilities, credits, and deductions, and they prepare and submit tax returns to the appropriate tax authorities. Tax accountants also provide advice and guidance on tax planning strategies to help minimize tax liabilities and maximize tax benefits. They may specialize in areas such as individual taxation, corporate taxation, or international taxation. With their expertise in tax laws and regulations, tax accountants help businesses and individuals meet their tax obligations while optimizing their tax position.                                            
+                                        </p>
+                                       
+                                    </div>
+                                </div>
+                               
+                            </section>
+                            <section>
+                                <div class="product">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSnkaho3XWHvY35nLwP77GUeZNQ2BQWx2flpOIp5TAIg&s" alt="Product Image">
+                                    <div class="product-info">
+                                        <h2> 
+                                            Controller</h2>
+                                        <p>
+                                            Controllers are responsible for overseeing the financial operations of a company, including financial reporting, budgeting, and internal controls. They manage a team of accountants and financial analysts to ensure accurate and timely financial reporting and analysis. Controllers also develop and implement financial policies, procedures, and systems to improve efficiency and effectiveness. They collaborate with other departments to develop budgets, forecasts, and financial plans to support the company's strategic goals and objectives. Controllers play a crucial role in providing financial leadership and guidance to senior management, helping to drive business performance and profitability.</p>
+                                    </div>
+                                </div>
+                               
+                            </section>
+                            <section>
+                                <div class="product">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtgQsK4kE1W_jb5WFgdqKpnlPHvXBSElq2pIKJ42nlGw&s" alt="Product Image">
+                                    <div class="product-info">
+                                        <h2> 
+                                            Financial Manager</h2>
+                                        <p>
+                                            Financial managers are responsible for the financial health of an organization, including financial planning, budgeting, and investment activities. They analyze financial data and trends to provide insights and recommendations to senior management for decision-making. Financial managers oversee the preparation of financial reports, budgets, and forecasts, and they monitor and analyze financial performance against targets and benchmarks. They also manage cash flow, investment portfolios, and financing strategies to optimize the organization's financial position and maximize returns. With their expertise in financial management and analysis, financial managers play a crucial role in driving business growth and profitability.</p>
+                                    </div>
+                                </div>
+                               
+                            </section>
+                            <section>
+                                <div class="product">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs7OCvaEg6m5NT2LUb57hTny65OYLI4BM1aSIWzyk5tQ&s" alt="Product Image">
+                                    <div class="product-info">
+                                        <h2> 
+                                            Treasury Analyst</h2>
+                                        <p>
+                                          
+Treasury analysts are responsible for managing a company's cash flow, including cash management, forecasting, and investment strategies. They monitor daily cash balances and cash flow projections to ensure that the company has enough liquidity to meet its financial obligations. Treasury analysts also manage relationships with banks and financial institutions, negotiate banking services, and optimize banking structures to minimize costs and maximize efficiency. They may also be involved in managing foreign exchange risk, interest rate risk, and other financial risks. With their expertise in cash management and financial markets, treasury analysts help companies optimize their financial resources and achieve their financial goals.</p>
+                                    </div>
+                                </div>
+                               
+                            </section>
+                            <section>
+                                <div class="product">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6rCHC5AQ6x04Lyib75Z0qHDFTMZGz2BRkrCqcPXljoA&s" alt="Product Image">
+                                    <div class="product-info">
+                                        <h2> 
+                                            Cost Accountant</h2>
+                                        <p>
+                                           
+Cost accountants are responsible for analyzing the costs of production and helping businesses determine the price of their products and services. They collect and analyze data related to the cost of materials, labor, and overhead to calculate the cost of producing goods and providing services. Cost accountants also develop and implement cost accounting systems and procedures to track and control costs, improve efficiency, and maximize profitability. They may also be involved in budgeting, forecasting, and variance analysis to help businesses manage their financial performance effectively. With their expertise in cost analysis and management accounting, cost accountants play a crucial role in helping businesses make informed decisions and achieve their financial goals.</p>
+                                    </div>
+                                </div>
+                               
+                            </section>
+                           </div>
+                           </div>
+  
+        </div>
+       
+    </div>
+    </main>
+
+    <script>
+        function showContent() {
+            var selectedTopic = document.getElementById("topics").value;
+            var topics = ["topic1", "topic2", "topic3", "topic4", "topic5","topic6","topic7","topic8"];
+
+            for (var i = 0; i < topics.length; i++) {
+                var topicDiv = document.getElementById(topics[i]);
+                if (topics[i] === selectedTopic) {
+                    topicDiv.style.display = "block";
+                } else {
+                    topicDiv.style.display = "none";
+                }
+            }
+
+            document.getElementById("content").style.display = "block";
+        }
+
+        function showSections() {
+            var radio1 = document.getElementById("radio1");
+            var radio2 = document.getElementById("radio2");
+
+            var firstTwoSections = ["exams", "exams1", "exams2", "exams3", "exams4", "exams5","exams6","exams7"];
+            var lastTwoSections = ["jobs", "jobs1", "jobs2", "jobs3", "jobs4", "jobs5","jobs6","jobs7"];
+
+            if (radio1.checked) {
+                showHideSections(firstTwoSections, "block");
+                showHideSections(lastTwoSections, "none");
+            } else if (radio2.checked) {
+                showHideSections(firstTwoSections, "none");
+                showHideSections(lastTwoSections, "block");
+            }
+        }
+
+        function showHideSections(sections, display) {
+            for (var i = 0; i < sections.length; i++) {
+                var sectionDiv = document.getElementById(sections[i]);
+                sectionDiv.style.display = display;
+            }
+        }
+    </script>
+
+</body>
+</html>
